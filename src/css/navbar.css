@@ -1,0 +1,85 @@
+
+
+.logo_home {
+    width: 180px;
+    height: 80px;
+}
+.orange_home {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fa8925;
+    text-shadow: 4px 3px 5px grey;
+    font-size:40px;
+    font-weight: 500;
+}
+.dropdown-menu li a{
+  color: grey;
+}
+.font_nav {
+    font-weight: 550;
+    font-size: 17px;
+    color: white;
+}
+.dropdown {
+    padding-top: 5px;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-menu {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-image: none;
+}
+
+.dropdown-menu {
+    background-color: white;
+  }
+  
+  .dropbtn {
+    font-weight: 550;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+  } 
+  
+  .dropdown a:hover {
+      color: #fa8925;
+      text-decoration: none;
+  }
+  .font_nav:hover {
+      color: #fa8925;
+  }
+  .bar{
+      color: white;
+      font-size:25px;
+      font-weight: 100;
+  }
+  .orange_home2 {
+    visibility:hidden;
+    display: none;
+  }
+  .the-blur{
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 80px;
+    margin-bottom: 10px;
+    background: grey;
+    z-index:1010;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(50px);
+ }
+ .link:hover {
+   text-decoration: none;
+ }

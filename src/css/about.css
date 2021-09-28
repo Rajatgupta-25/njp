@@ -1,0 +1,36 @@
+.about_back {
+    height: 720px;
+    background-image: url('../images/About/aboutBack.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.about_heading {
+    padding-top: 180px;
+    color: crimson;
+    font-size:60px;
+    text-shadow: 4px 4px 15px firebrick;
+}
+.about_content {
+    padding-top: 30px;
+    color: midnightblue;
+    font-weight: 600;
+}
+.readMore {
+    color: white;
+    background-color: #eb3b4f;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eb3b4f;
+    box-shadow: 3px 3px 15px #e66785;
+}
+.readMore:hover {
+    color: #eb3b4f;
+    background-color: #dae9ed;
+    border-color: #dae9ed;
+    box-shadow: 3px 3px 15px #aadef2;
+}
+.button_padding {
+    padding-top: 40px;
+    padding-left: 550px;
+}

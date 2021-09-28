@@ -1,0 +1,27 @@
+.upName {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px 5px 12px grey;
+}
+.districtName {
+    font-size: 50px;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+}
+.numberDistrict {
+    padding-left: 20%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content {
+    padding-top: 17%;
+}
+.backContent {
+    background-image: url('https://cdn.wallpapersafari.com/91/0/SRuG02.jpg');
+    color: white;
+}
+.backMap {
+    background-color: cornsilk;
+}
