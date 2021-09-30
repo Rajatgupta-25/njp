@@ -1,0 +1,118 @@
+.footer-area {
+    background-color: rgb(23, 23, 75);
+}
+.partyHeading {
+    padding-top: 120px;
+    color: steelblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+.about p {
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+.about p:hover {
+    color: rgb(253, 90, 31);
+}
+.partition {
+    width: 250px;
+    background-color: rgb(99, 98, 98);
+}
+.document {
+    color: steelblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+.leader {
+    padding-top: 120px;
+    color: steelblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+.njplive {
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    background-color:rgb(250, 126, 54);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.njplive:hover {
+    background-color: rgb(232, 106, 32);
+    color: white;
+}
+.aboutnjp {
+    width: 250px;
+    height: 40px;
+    background-color:darkorchid;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.aboutnjp:hover {
+    background-color: rgb(105, 20, 148);
+    color: white;
+}
+.aboutGurudev {
+    width: 250px;
+    height: 40px;
+    background-color:rgb(253, 30, 149);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.aboutGurudev:hover {
+    background-color: rgb(184, 22, 108);
+    color: white;
+}
+.joinVolunteerAbout {
+    width: 250px;
+    height: 40px;
+    background-color:rgb(79, 212, 201);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.joinVolunteerAbout:hover {
+    background-color: rgb(41, 155, 145);
+    color: white;
+}
+.joinMemberAbout {
+    width: 250px;
+    height: 40px;
+    background-color:rgb(79, 212, 130);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.joinMemberAbout:hover {
+    background-color: rgb(44, 163, 90);
+    color: white;
+}
+.makeDonationAbout {
+    width: 250px;
+    height: 40px;
+    background-color:rgb(212, 170, 91);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.makeDonationAbout:hover {
+    background-color: rgb(160, 120, 47);
+    color: white;
+}
+.students {
+    width: 250px;
+    height: 40px;
+    background-color:rgb(199, 67, 67);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.students:hover {
+    background-color: rgb(163, 33, 33);
+    color: white;
+}
+

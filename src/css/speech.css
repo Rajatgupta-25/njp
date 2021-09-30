@@ -1,0 +1,76 @@
+.pressReleaseButton {
+    background-color: #24305f;
+    color: white;
+    cursor: pointer;
+    
+}
+.speechesButton {
+    background-color: #3f53af;
+    color:  white;
+    cursor: pointer;
+}
+.articlesButton {
+    background-color: #2e3e86;
+    color: white;
+    cursor: pointer;
+    
+}
+.down_signPress {
+    background-color: white;
+    color:  #3c4775;
+}
+.down_signSpeeches {
+    background-color: white;
+    color:  #3f53af;
+    display: none;
+}
+.down_signArticles {
+    background-color: white;
+    color:  #2e3e86;
+    display: none;
+}
+.box_press{
+    height: 550px;
+    overflow:scroll;
+    overflow-x: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2d46b5;
+}
+.articleSection {
+    display: none;
+}
+.speechesSection {
+    display: none;
+}
+.mutedText {
+    font-size: 12px;
+}
+.mutedTextIcon {
+    font-size: 16px;
+}
+.read_more {
+    color: crimson;
+}
+.read_more:hover {
+    cursor: pointer;
+    color: #2d46b5;
+}
+.box_press {
+    background-color: white;
+}
+.fb:hover {
+    color: steelblue;
+    cursor: pointer;
+}
+.twitter:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+.share:hover {
+    color: crimson;
+    cursor: pointer;
+}
+.speechBack {
+    background-color: rgb(62, 62, 112);
+}

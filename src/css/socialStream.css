@@ -1,0 +1,71 @@
+.socialBack {
+    background-color: #ededed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.eventButton {
+    width: 220px;
+    background-color: rgb(66, 54, 145);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+}
+.debateButton {
+    width: 230px;
+    background-color: rgb(66, 54, 145);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+}
+.eventButton:hover {
+    background-color: rgb(48, 37, 122);
+    color: white;
+}
+.debateButton:hover {
+    background-color: rgb(48, 37, 122);
+    color: white;
+}
+.social {
+    position: relative;
+    top: -25px;
+}
+.fbSocial {
+    position: relative;
+    top: 0px;
+    left: -20px;
+    background-color: steelblue;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+}
+.twitterSocial {
+    position: relative;
+    top: 27px;
+    left: -40px;
+    background-color: skyblue;
+    color: white;
+    padding: 5px;
+}
+.instaSocial {
+    position: relative;
+    top: 52px;
+    left: -65px;
+    background-color:rgb(158, 47, 158);
+    color: white;
+    padding:5px;
+}
+.fbSocial:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(37, 92, 138);
+}
+.twitterSocial:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(70, 137, 163);
+}
+.instaSocial:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(124, 25, 124);
+}

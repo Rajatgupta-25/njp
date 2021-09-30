@@ -1,15 +1,75 @@
-.join_journey {
-    color: steelblue;
-    padding-top: 160px;
+.join_heading {
     font-size: 80px;
+    font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: 3px 3px 5px turquoise;
 }
-.add {
-    clip-path: circle(64.9% at 0 50%);
-    background-color: peachpuff;
+.joinHead {
+    padding-top: 180px;
 }
-.addRow {
-    height: 550px;
-    background-color: slategray;
+.bg-underline {
+    background-image: linear-gradient(transparent 65%, darksalmon 0%);
+    background-repeat: no-repeat;
+    background-size: 100% 250%;
+    background-position: 0% 65%;
+    transition: background-position 0.5s ease 0s;
+  }
+  .quote {
+      position: absolute;
+      top: 210px;
+      left: 0px;
+  }
+  
+  .bg-underline:hover {
+    background-position: 0% 100%;
+  }
+
+  .quote2 {
+      position: absolute;
+      top: 325px;
+      left: 390px;
+  }
+  
+.imageSection {
+    padding-top: 150px;
+}
+.imageSection img {
+    box-shadow: 4px 4px 6px grey;
+    border-radius: 1%;
+}
+.change {
+    padding-top:30px;
+    font-size: 25px;
+}
+.joinVolunteer {
+    height: 150px;
+    width: 160px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 25px;
+}
+.joinMember {
+    height: 150px;
+    width: 160px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}
+.makeDonation {
+    height: 150px;
+    width: 160px;
+    background-color: rgb(233, 97, 124);
+    color: white;
+    font-size: 25px;
+}
+.joinVolunteer:hover {
+    color:white;
+    background-color: rgb(59, 100, 177);
+}
+.joinMember:hover {
+    color:white;
+    background-color: rgb(207, 95, 54);
+}
+.makeDonation:hover {
+    color:white;
+    background-color: rgb(179, 48, 74);
 }

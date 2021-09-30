@@ -7,6 +7,9 @@ import Highlights from './Highlight';
 import Map from './Map';
 import Abouts from './About';
 import Join from './JoinSection';
+import Speech from './Speeches';
+import FooterSection from './Footer';
+import SocialStream from './Social';
 
 export default function Home(){
     return (
@@ -18,6 +21,9 @@ export default function Home(){
             <Map/>
             <Abouts/>
             <Join/>
+            <Speech/>
+            <SocialStream/>
+            <FooterSection/>
         </>
     );
 }
