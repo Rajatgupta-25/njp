@@ -24,7 +24,7 @@ export default function SocialStream() {
 
 <iframe  src="https://en.wikipedia.org/wiki/Adi_Shankara" width="440" height="255"></iframe>
 </section>
-<section className="who mt-3">
+<section className="who mt-2">
 
 <iframe width="440" height="315" src="https://www.youtube.com/embed/Iimyx-eAuSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
@@ -32,11 +32,11 @@ export default function SocialStream() {
 
 <div className="col-4 mt-5 text-left">
             <section className = "if">
-            <a href="https://en.wikipedia.org/wiki/Adi_Shankara" target="sm" className="fa fa-facebook fbSocial"></a>
-<a href="https://en.wikipedia.org/wiki/Adi_Shankara" target="sm" className="fa fa-twitter twitterSocial"></a>
-<a href="https://en.wikipedia.org/wiki/Adi_Shankara" target="sm" className="fa fa-instagram instaSocial"></a>
+            <a href="https://www.facebook.com/NJP4INDIA/" target="sm" className="fa fa-facebook fbSocial"></a>
+<a href="https://twitter.com/NJP4INDIA?s=09" target="sm" className="fa fa-twitter twitterSocial"></a>
+<a href="https://www.instagram.com/invites/contact/?i=1he2z86dlkn77&utm_content=ml5kafs" target="sm" className="fa fa-instagram instaSocial"></a>
 
-<iframe name="sm" className="social" src="https://www.ndtv.com/india-news/amarinder-singh-tweets-after-meeting-amit-shah-urged-him-to-resolve-farmer-crisis-with-repeal-of-laws-2558156#pfrom=home-ndtv_topscroll" style={{"height":"580px", "width":"450px"}} title="Iframe Example"></iframe>
+<iframe name="sm" className="social" src="https://www.facebook.com/NJP4INDIA/" style={{"height":"580px", "width":"450px"}} title="Iframe Example"></iframe>
 
 
 </section>

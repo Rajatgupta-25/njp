@@ -11,11 +11,12 @@ const Images = {
     highlight4: require('../images/MainHighlights/highlight4.jpg').default,
     highlight5: require('../images/MainHighlights/highlight5.jpg').default,
     map: require('../images/map.png').default,
-    topEvent: require('../images/LatestEvent/event.png').default,
+    topEvent: require('../images/LatestEvent/events.png').default,
     man: require('../images/LatestEvent/man.jpg').default,
     news: require('../images/LatestEvent/news.jpg').default, 
     aboutBack: require('../images/About/aboutBack.png').default,
     puri: require('../images/About/puri.png').default,
+    topImage: require('../images/LatestEvent/topImage.jpg').default,
 }
 
 export default Images;

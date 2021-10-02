@@ -115,4 +115,30 @@
     background-color: rgb(163, 33, 33);
     color: white;
 }
-
+.connectWithUs {
+    margin-top: 40px;
+    color: steelblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+.connect a span{
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+.connect .fb:hover {
+    color: steelblue;
+    font-size: 20px;
+}
+.connect .insta:hover {
+    color:darkmagenta;
+    font-size: 20px;
+}
+.connect .twitter:hover {
+    color: skyblue;
+    font-size: 20px;
+}
+.connect .youtube:hover {
+    color: red;
+    font-size: 20px;
+}

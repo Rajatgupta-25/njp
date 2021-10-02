@@ -1,0 +1,18 @@
+.partyHeadingMenu {
+    padding-top: 35px;
+    color: steelblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+.leaderMenu {
+    padding-top: 75px;
+    color: steelblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+.backArrow {
+    color: steelblue;
+}
+.backArrow:hover {
+    color: rgb(48, 97, 138);
+}

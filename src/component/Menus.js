@@ -1,16 +1,20 @@
 import React from 'react';
-import '../css/footer.css';
+import { Link } from 'react-router-dom';
+import '../css/menu.css';
 
-export default function FooterSection() {
+export default function Menu() {
     return (
         <>
-            <div className="container-fluid footer-area">
+            <div className="container-fluid text-left footer-area">
                 <div className="row">
                     <div className="col-12">
                         <div className="container-fluid text-left">
                             <div className="row">
                                 <div className="col-2 ml-5">
-                                    <p className="partyHeading">ABOUT PARTY</p>
+                                <Link to="/">
+                                        <span className="mt-3 backArrow fa fa-arrow-circle-left fa-2x"></span>
+                                    </Link>
+                                    <p className="partyHeadingMenu">ABOUT PARTY</p>
                                     <div className="about">
                                         <p>Our Philosophy</p>
                                         <p>Integral Humanism</p>
@@ -42,7 +46,7 @@ export default function FooterSection() {
                                 </div>
                                 <div className="col-1"/>
                                 <div className="col-2">
-                                    <p className="leader">LEADERSHIP</p>
+                                    <p className="leaderMenu">LEADERSHIP</p>
                                     <div className="about">
                                         <p>Puri Shankaracharya</p>
                                         <p>Adi Shankaracharya</p>
@@ -67,7 +71,7 @@ export default function FooterSection() {
                                 </div>
                                 <div className="col-1"/>
                                 <div className="col-2">
-                                    <p className="leader">MEDIA RESOURCES</p>
+                                    <p className="leaderMenu">MEDIA RESOURCES</p>
                                     <div className="about">
                                         <p>Press Release</p>
                                         <p>Speeches</p>
@@ -90,7 +94,7 @@ export default function FooterSection() {
                                     <button className="btn p-2 njplive">NJP LIVE</button>
                                 </div>
                                 <div className="col-2 ml-5">
-                                    <p className="leader ml-5">CORE ISSUES</p>
+                                    <p className="leaderMenu ml-5">CORE ISSUES</p>
                                     <div className="about ml-5">
                                         <p>Agriculture & Logistics</p>
                                         <p>Education</p>

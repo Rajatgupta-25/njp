@@ -50,7 +50,6 @@ export default function NavBar() {
           <a className="dropbtn">RESOURCES <b className=" fa fa-angle-down"></b></a>
           <ul className="dropdown-menu">
             <li className="ml-3"><a href="#">Press Release</a></li>
-            <li className="ml-3"><a href="#">Events</a></li>
             <li className="ml-3"><a href="#">Interview & Articles</a></li>
             <li className="ml-3"><a href="#">Speech & Debates</a></li>
             <li className="ml-3"><a href="#">Photo Gallery</a></li>
@@ -58,7 +57,11 @@ export default function NavBar() {
         </li>
         <span className="ml-2 bar"> | </span>
       <Nav.Link href="#deets"><h6 className="font_nav">NJP LIVE </h6></Nav.Link>
-      <Nav.Link href="#deets"><h6 className="font_nav"><span className="ml-2 fa fa-navicon "></span></h6></Nav.Link>
+      <Nav.Link href="#deets">
+        <Link classame="link" to="/menu">
+        <h6 className="font_nav"><span className="ml-2 fa fa-navicon "></span></h6>
+        </Link>
+        </Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>

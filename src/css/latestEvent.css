@@ -1,3 +1,49 @@
 .image_event {
     box-shadow: 5px 6px 15px grey;
 }
+.eventBox {
+    height: 750px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: white;
+}
+.imageEvent {
+    box-shadow: 4px 5px 15px cadetblue;
+    border-radius: 5px;
+}
+
+.latest {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+.eventHeading {
+    font-size: 70px;
+    font-weight: 600;
+    color:rgba(30, 25, 78, 0.842);
+    text-shadow: 3px 3px 8px slateblue;
+}
+.eventBack {
+    background-image: url('https://p2.piqsels.com/preview/503/304/1002/sunset-blue-peachy-orange-deep-yellow.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.suggestBox {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(30, 25, 78, 0.842);
+    height: 850px;
+    background-color:rgba(30, 25, 78, 0.842);
+    color: white;
+}
+.boxShow {
+    background-color: white;
+}
+.boxContent {
+    font-size: 12px;
+    font-weight: 500;
+}
+.eventLinks {
+    margin-left: 80px;
+}

@@ -1,28 +1,28 @@
 .socialBack {
-    background-color: #ededed;
+    background-color: rgb(47, 31, 83);
     padding-top: 40px;
     padding-bottom: 40px;
 }
 .eventButton {
     width: 220px;
-    background-color: rgb(66, 54, 145);
+    background-color: rgb(61, 67, 126);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     color: white;
 }
 .debateButton {
     width: 230px;
-    background-color: rgb(66, 54, 145);
+    background-color: rgb(94, 81, 165);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     color: white;
 }
 .eventButton:hover {
-    background-color: rgb(48, 37, 122);
+    background-color: rgb(64, 84, 119);
     color: white;
 }
 .debateButton:hover {
-    background-color: rgb(48, 37, 122);
+    background-color: rgb(62, 52, 117);
     color: white;
 }
 .social {
@@ -62,7 +62,7 @@
 .twitterSocial:hover {
     color: white;
     text-decoration: none;
-    background-color: rgb(70, 137, 163);
+    background-color: rgb(94, 174, 206);
 }
 .instaSocial:hover {
     color: white;

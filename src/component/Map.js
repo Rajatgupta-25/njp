@@ -27,7 +27,7 @@ export default function Map() {
                         </div>
                     </div>
                     <div className="col-6  backMap mt-1">
-                        <img src={Images.map} width="650px" height="620px" alt="map" />
+                        <img className="ml-5" src={Images.map} width="650px" height="620px" alt="map" />
                     </div>
                 </div>
             </div>
