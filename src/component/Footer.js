@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/footer.css';
 
 export default function FooterSection() {
@@ -100,8 +101,12 @@ export default function FooterSection() {
                                         <p>Women Centric Issues</p>
                                     </div>
                                     <hr className="partition ml-5"/>
+                                    <Link to="/join">
                                     <button className="btn mt-2 p-2 ml-5 joinVolunteerAbout">JOIN AS VOLUNTEER</button>
+                                    </Link>
+                                    <Link to="/join">
                                     <button className="btn mt-3 p-2 ml-5 joinMemberAbout">JOIN AS MEMBER</button>
+                                    </Link>
                                     <button className="btn mt-3 p-2 ml-5 makeDonationAbout">MAKE A DONATION</button>
                                     <button className="btn mt-3 p-2 ml-5 aboutnjp">ABOUT NJP</button>
                                 </div>

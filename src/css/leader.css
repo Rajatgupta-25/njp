@@ -54,19 +54,27 @@
     cursor: pointer;
 }
 .icon_link_fb:hover {
+    color: white;
+    text-decoration: none;
     background: steelblue;
     border-color: steelblue;
 }
 .icon_link_twitter:hover {
+    color: white;
+    text-decoration: none;
     background: skyblue;
     border-color: skyblue;
 }
 
 .icon_link_instagram:hover {
+    color: white;
+    text-decoration: none;
     background: #b03779;
     border-color: #b03779;
 }
 .icon_link_youtube:hover {
+    color: white;
+    text-decoration: none;
     background: red;
     border-color: red;
 }

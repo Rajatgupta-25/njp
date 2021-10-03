@@ -17,6 +17,16 @@ const Images = {
     aboutBack: require('../images/About/aboutBack.png').default,
     puri: require('../images/About/puri.png').default,
     topImage: require('../images/LatestEvent/topImage.jpg').default,
+    vijaynderSingh: require('../images/Member/vijaynderSingh.jpg').default,
+    dineshKumarGupta: require('../images/Member/dineshKumarGupta.jpg').default,
+    rajniPareshar: require('../images/Member/rajniPareshar.jpg').default,
+    vinodUpadhyay: require('../images/Member/vinodUpadhyay.jpg').default,
+    abhishekBhatt: require('../images/Member/abhishekBhatt.jpg').default,
+    vishalKrishna: require('../images/Member/vishalKrishna.jpg').default,
+    ashwiniKumarSharma: require('../images/Member/ashwiniKumarSharma.jpg').default,
+    deepakSharma: require('../images/Member/deepakSharma.jpg').default,
+    hireshSingh: require('../images/Member/hireshSingh.jpg').default,
+    varunShaurya: require('../images/Member/varunShaurya.jpg').default,
 }
 
 export default Images;

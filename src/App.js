@@ -4,6 +4,7 @@ import Home from './component/Home';
 import LatestEvents from './component/LatestEvent';
 import Members from './component/Member';
 import Menu from './component/Menus';
+import JoinNJP from './component/Join';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route exact path="/latestEvents" component={LatestEvents}/>
             <Route exact path="/members" component={Members}/>
             <Route exact path="/menu" component={Menu}/>
+            <Route exact path="/join" component={JoinNJP}/>
           </Switch>
       </BrowserRouter>
     </div>

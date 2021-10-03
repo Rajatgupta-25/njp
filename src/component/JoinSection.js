@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/joinJourney.css';
+import { Link } from 'react-router-dom';
 
 export default function Join() {
     return (
@@ -14,8 +15,12 @@ export default function Join() {
                     </div>
                     <div className="col-6 imageSection">
                         <img className="ml-4 animate__animated animate__fadeInRight" src="https://pbs.twimg.com/media/DrD35qkWoAAzuwg.jpg" width="700px" height="350px"/>
+                        <Link to="/join">
                         <button className="mt-5 ml-5 animate__animated animate__fadeInDown animate__delay-1s btn joinVolunteer">JOIN AS<br/> VOLUNTEER</button>
+                        </Link>
+                        <Link to="/join">
                         <button className="mt-5 ml-5 animate__animated animate__fadeInUp animate__delay-2s btn joinMember">JOIN AS<br/> MEMBER</button>
+                        </Link>
                         <button className="mt-5 ml-5 animate__animated animate__fadeInDown animate__delay-3s btn makeDonation">MAKE A<br/> DONATION</button>
                     </div>
                 </div>
