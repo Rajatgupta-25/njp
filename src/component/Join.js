@@ -1,22 +1,32 @@
 import React from 'react';
 import NavBar from './Navbar';
-import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap';
 import '../css/join.css';
 import '../plugins/join';
 import FooterSection from './Footer';
+import Images from './Images';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 export default function JoinNJP() {
     return (
         <>
-            <div className="join">
                 <NavBar/>
-                <div className="container mt-5" style={{paddingBottom: '80px'}}>
+                <div className="container-fluid text-left">
                     <div className="row">
-                        <div className="col-12 border" style={{paddingBottom: '40px'}}>
-                        <Container>
+                        <div className="col-6 ml-4" style={{paddingBottom: '40px'}}>
+                            <img src={Images.joinBack} width="750px" height="650px" style={{boxShadow: '4px 4px 10px grey'}} />
+                        </div>
+                        <div className="col-5 ml-5 border" style={{height: '650px'}}>
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <div className="col-12 text-center">
+                                        <p className="form-heading">JOIN THE JOURNEY WITH NJP</p>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-12">
+                                    <Container>
                 <Row>
-                    <Col>
-                        <p className="instantLoan mt-3">JOIN NJP</p>
+                    <Col xs={3}>
                         <div className="progressBar mt-5">
                         <ul className="step-1">
         <li className="active">
@@ -60,28 +70,37 @@ export default function JoinNJP() {
                         <Container className="mt-1">
                                 <div id="form1">
                                 <Row>
-                                    <Col xs={5}>
-                    <Form.Group className="mb-3" controlId="formBasicName">
-    <Form.Control type="text" placeholder="Name" required/>
+                    <Col xs={6}>
+                        <p className="pdetail">Personal Details</p>
+                    </Col>
+                </Row>
+                                <Row className="mt-2">
+                                    <Col xs={2} className="mt-1" >
+                                    <select class="form-control control" style={{width: '80px'}} aria-label=".form-select-lg example">
+  <option selected>Mr.</option>
+  <option value="1">Mrs.</option>
+  <option value="2">Miss</option>
+</select>
+
+                                    </Col>
+                                    <Col xs={1}/>
+                                    <Col xs={8} className="mt-1">
+                    <Form.Group controlId="formBasicName">
+    <Form.Control className="control" type="text" placeholder="Name" required/>
   </Form.Group>
   </Col>
-  <Col xs={1}></Col>
-  <Col xs={5}>
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Control type="email" placeholder="Email" required/>
-  </Form.Group>
-</Col>
 </Row>
-  <Row>
-      <Col xs={5}>
-      <Form.Group className="mb-3" controlId="formBasicZip">
-    <Form.Control type="number" placeholder="Zip Code" required/>
+<Row>
+        <Col xs={11} className="mt-4">
+        <Form.Group controlId="formBasicEmail">
+    <Form.Control type="email" className="control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
   </Form.Group>
-      </Col>
-      <Col xs={1}></Col>
-      <Col xs={5}>
-      <Form.Group className="mb-3" controlId="formBasicNumber">
-    <Form.Control type="number" placeholder="Phone Number" required/>
+  </Col>
+  </Row>
+  <Row>
+      <Col xs={11} className="mt-4">
+      <Form.Group className="mb-3" controlId="formBasicZip">
+    <Form.Control type="number" className="control" placeholder="Mobile Number" pattern="[789][0-9]{9}" required/>
   </Form.Group>
       </Col>
   </Row>
@@ -90,48 +109,32 @@ export default function JoinNJP() {
       <Col xs={12}>
         <Container fluid className="text-left">
             <form>
-            <Row>
-                <Col xs={5}>
-                    <input className="form-control" type="text" placeholder="Aadhar Card Number" required/>
-                </Col>
-                <Col xs={1}></Col>
-                <Col xs={5}>
-                    <input className="form-control" type="text" placeholder="Pan Card Number" required/>
-                </Col>
-            </Row>
-            <Row className="mt-3">
-                <Col xs={5}>
-                    <input className="form-control" type="date" placeholder="Date" required/>
-                    <small className="text-muted">When you want?</small>
-                </Col>
-                <Col xs={1}></Col>
-                <Col xs={5}>
-                <input className="form-control" type="number" placeholder="Amount" required/>
+                <Row>
+                <Col xs={6}>
+                        <p className="pdetail">Contact Details</p>
+                    </Col>
+                </Row>
+            <Row className="mt-2">
+                <Col xs={11}>
+                    <input className="form-control control" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required/>
                 </Col>
             </Row>
-            <Row className="mt-3">
-                <Col>
-                    <h6>Select the Rating system which you want to apply</h6>
-                    <input id="first" type="radio" name="option"/>
-                    <label className="ml-2" for="first">4.2% for 5 year</label>
+            <Row className="mt-4">
+                <Col xs={3}>
+                <label className="mt-3 dob"><h6>Date Of Birth</h6></label>
+                </Col>
+                <Col xs={8}>
+                    <input className="form-control control" type="date" placeholder="Date" required/>
                 </Col>
             </Row>
-            <Row className="mt-3">
-                <Col>
-                <input id="second" type="radio" name="option"/>
-                    <label className="ml-2" for="second">8% for 10 year</label>
+            <Row className="mt-4">
+                <Col xs={11}>
+                    <input className="form-control control" type="text" placeholder="Permanent Address" required/>
                 </Col>
             </Row>
-            <Row className="mt-3">
-                <Col>
-                <input id="third" type="radio" name="option"/>
-                    <label className="ml-2" for="third">10.2% for 15 year</label>
-                </Col>
-            </Row>
-            <Row className="mt-3">
-                <Col>
-                <input id="fourth" type="radio" name="option"/>
-                    <label className="ml-2" for="fourth">15.3% for 20 year</label>
+            <Row className="mt-4">
+                <Col xs={11}>
+                    <input className="form-control control" type="text" placeholder="Temporary Address" required/>
                 </Col>
             </Row>
             </form>
@@ -143,60 +146,51 @@ export default function JoinNJP() {
         <form>
             <Container fluid className="text-left">
                 <form>
-                <Row>
+                    <Row>
+                        <Col xs={6}>
+                            <p className="pdetail">Documents</p>
+                        </Col>
+                    </Row>
+                <Row className="mt-2">
                     <Col xs={6}>
                         <h6>Upload Aadhar Card or Driving License or Voter Id Card or Passport</h6>
                     </Col>
-                </Row>
-                <Row>
                     <Col xs={6}>
-                    <input className="form-control" type="file" required/>
+                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
-                <Row className="mt-3">
+                <Row className="mt-2">
                     <Col xs={6}>
                         <h6>Upload Pen Card</h6>
                     </Col>
-                </Row>
-                <Row>
                     <Col xs={6}>
-                    <input className="form-control" type="file" required/>
+                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
-                <Row className="mt-3">
+                <Row className="mt-2">
                     <Col xs={6}>
                         <h6>Upload Residencial Proof</h6>
                     </Col>
-                </Row>
-                <Row>
                     <Col xs={6}>
-                    <input className="form-control" type="file" required/>
+                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
-                <Row className="mt-3">
-                    <Col xs={6}>
-                        <h6>Upload Application written by yourself</h6>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={6}>
-                    <input className="form-control" type="file" required/>
-                    </Col>
-                </Row>
-                <Row className="mt-3">
+                <Row className="mt-2">
                     <Col xs={6}>
                         <h6>Upload Passport Size Photo</h6>
                     </Col>
-                </Row>
-                <Row>
                     <Col xs={6}>
-                    <input className="form-control" type="file" required/>
+                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
-                <Row className="mt-5">
-                    <Col>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Information is filled by me and I am responsible if any disrespency occurred" />
+                <Row className="mt-2">
+                    <Col xs={12}>
+                    <Form.Group controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label=" I certify that above provided information is correct and there is no mistake. I know that all further communication will be done on above provided details." />
   </Form.Group>
                     </Col>
                 </Row>
@@ -205,22 +199,22 @@ export default function JoinNJP() {
         </form>   
       </Col>
   </Row>
-  <Row>
-      <Col xs={9}></Col>
-      <Col xs={1} id="colPrev1">
+  <Row className="mt-3">
+      <Col xs={2}></Col>
+      <Col xs={2} id="colPrev1">
       <Button id="prev1" style={{display:'none'}} variant="outline-dark">Prev</Button>
       </Col>
-      <Col xs={1} id="colNext1">
-      <Button id="next1" variant="outline-info">Next</Button>
+      <Col xs={2} id="colNext1 ml-5">
+      <Button type="submit" id="next1" variant="outline-info">Next</Button>
       </Col>
-      <Col xs={1} id="colNext2">
-      <Button id="next2" style={{display:'none'}} variant="outline-info">Next</Button>
+      <Col xs={2} id="colNext2 ml-5">
+      <Button type="submit" id="next2" style={{display:'none'}} variant="outline-info">Next</Button>
       </Col>
-      <Col xs={1} id="colPrev2">
+      <Col xs={2} id="colPrev2 mr-4">
       <Button id="prev2" style={{display:'none'}} variant="outline-dark">Prev</Button>
       </Col>
-      <Col xs={1} id="colSubmit">
-      <Button id="submit" style={{display:'none'}} variant="outline-info">Submit</Button>
+      <Col xs={2} id="colSubmit">
+      <Button type="submit" id="submit" style={{display:'none'}} variant="outline-info">Submit</Button>
       </Col>
   </Row>
   </Container>
@@ -228,11 +222,14 @@ export default function JoinNJP() {
                     </Col>
                 </Row>    
             </Container>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <FooterSection/>
-            </div>
+            
         </>
     );
 }

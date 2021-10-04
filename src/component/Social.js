@@ -36,7 +36,7 @@ export default function SocialStream() {
 <a href="https://twitter.com/NJP4INDIA?s=09" target="sm" className="fa fa-twitter twitterSocial"></a>
 <a href="https://www.instagram.com/invites/contact/?i=1he2z86dlkn77&utm_content=ml5kafs" target="sm" className="fa fa-instagram instaSocial"></a>
 
-<iframe name="sm" className="social" src="https://www.facebook.com/NJP4INDIA/" style={{"height":"580px", "width":"450px"}} title="Iframe Example"></iframe>
+<iframe name="sm" className="social" src="https://www.facebook.com/NJP4INDIA/" allowTransparency="true" allow="encrypted-media" style={{"height":"580px", "width":"450px"}} title="Iframe Example"></iframe>
 
 
 </section>

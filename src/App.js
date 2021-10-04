@@ -5,6 +5,11 @@ import LatestEvents from './component/LatestEvent';
 import Members from './component/Member';
 import Menu from './component/Menus';
 import JoinNJP from './component/Join';
+import AdiShankaracharya from './component/AdiShankaracharyaAbout';
+import AboutSwami from './component/SwamiNischalananda';
+import AboutBharati from './component/BharatiKrishna';
+import AboutTimeline from './component/Timeline';
+import GurudevGallery from './component/Gallery';
 
 function App() {
   return (
@@ -16,6 +21,11 @@ function App() {
             <Route exact path="/members" component={Members}/>
             <Route exact path="/menu" component={Menu}/>
             <Route exact path="/join" component={JoinNJP}/>
+            <Route exact path="/aboutAdiShankaracharyaJi" component={AdiShankaracharya}/>
+            <Route exact path="/aboutSwamiNischalanandaSaraswatiJi" component={AboutSwami}/>
+            <Route exact path="/aboutBharatiKrishnaTeerathJi" component={AboutBharati}/>
+            <Route exact path="/timeline" component={AboutTimeline}/>
+            <Route exact path="/gallery" component={GurudevGallery}/>
           </Switch>
       </BrowserRouter>
     </div>

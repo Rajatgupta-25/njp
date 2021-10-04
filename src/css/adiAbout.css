@@ -1,0 +1,16 @@
+.adiBack {
+    height: 760px;
+    background-image: url('../images//About/adi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentAboutAdi {
+    padding-top: 750px;
+}
+.leftHeading {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(114, 28, 45);
+}

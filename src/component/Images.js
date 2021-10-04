@@ -27,6 +27,8 @@ const Images = {
     deepakSharma: require('../images/Member/deepakSharma.jpg').default,
     hireshSingh: require('../images/Member/hireshSingh.jpg').default,
     varunShaurya: require('../images/Member/varunShaurya.jpg').default,
+    joinBack: require('../images/joinBack.jpg').default,
+    adi: require('../images/About/adi.png').default,
 }
 
 export default Images;

@@ -26,10 +26,21 @@ export default function NavBar() {
         <li className="ml-2 dropdown">
           <a className="dropbtn">Gurudev <b className=" fa fa-angle-down"></b></a>
           <ul className="dropdown-menu">
-            <li className="ml-3"><a href="#">Poori Shankracharya</a></li>
-            <li className="ml-3"><a href="#">Ram</a></li>
-            <li className="ml-3"><a href="#">Shyam</a></li>
-            <li className="ml-3"><a href="#">Mohan</a></li>
+            <Link to="/aboutAdiShankaracharyaJi">
+            <li className="ml-3"><a href="#">Adi Shankaracharya</a></li>
+            </Link>
+            <Link to="/aboutSwamiNischalanandaSaraswatiJi">
+            <li className="ml-3"><a href="#">Swami Nischalananda Saraswati</a></li>
+            </Link>
+            <Link to="/aboutBharatiKrishnaTeerathJi">
+            <li className="ml-3"><a href="#">Bharati Krishna Teerathji</a></li>
+            </Link>
+            <Link to="/timeline">
+            <li className="ml-3"><a href="#">Timeline</a></li>
+            </Link>
+            <Link to="/gallery">
+            <li className="ml-3"><a href="#">Gallery</a></li>
+            </Link>
           </ul>
         </li>
         <span className="ml-2 bar"> | </span>
