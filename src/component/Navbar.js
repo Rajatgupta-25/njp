@@ -32,8 +32,8 @@ export default function NavBar() {
             <Link to="/aboutSwamiNischalanandaSaraswatiJi">
             <li className="ml-3"><a href="#">Swami Nischalananda Saraswati</a></li>
             </Link>
-            <Link to="/aboutBharatiKrishnaTeerathJi">
-            <li className="ml-3"><a href="#">Bharati Krishna Teerathji</a></li>
+            <Link to="/dikshitShishya">
+            <li className="ml-3"><a href="#">Dikshit Shishya</a></li>
             </Link>
             <Link to="/timeline">
             <li className="ml-3"><a href="#">Timeline</a></li>

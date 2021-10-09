@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NavBar from './Navbar';
 import '../css/join.css';
 import '../plugins/join';
 import FooterSection from './Footer';
 import Images from './Images';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import Swal from 'sweetalert2'
+
+const successAlert = () => {
+    Swal.fire({  
+        title: 'Congratulations!',  
+        text: 'You send your request successfully! We will get back to you soon.',
+        icon: 'success'
+      }); 
+}
 
 export default function JoinNJP() {
+
     return (
         <>
                 <NavBar/>
@@ -76,31 +86,31 @@ export default function JoinNJP() {
                 </Row>
                                 <Row className="mt-2">
                                     <Col xs={2} className="mt-1" >
-                                    <select class="form-control control" style={{width: '80px'}} aria-label=".form-select-lg example">
-  <option selected>Mr.</option>
-  <option value="1">Mrs.</option>
-  <option value="2">Miss</option>
+                                    <select class="form-control control" name="title"  style={{width: '80px'}} aria-label=".form-select-lg example">
+  <option selected value="Mr.">Mr.</option>
+  <option value="Mrs.">Mrs.</option>
+  <option value="Miss">Miss</option>
 </select>
 
                                     </Col>
                                     <Col xs={1}/>
                                     <Col xs={8} className="mt-1">
                     <Form.Group controlId="formBasicName">
-    <Form.Control className="control" type="text" placeholder="Name" required/>
+    <Form.Control className="control" name="from_name" type="text" placeholder="Name" required/>
   </Form.Group>
   </Col>
 </Row>
 <Row>
         <Col xs={11} className="mt-4">
         <Form.Group controlId="formBasicEmail">
-    <Form.Control type="email" className="control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+    <Form.Control type="email" className="control" name="reply_to" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
   </Form.Group>
   </Col>
   </Row>
   <Row>
       <Col xs={11} className="mt-4">
       <Form.Group className="mb-3" controlId="formBasicZip">
-    <Form.Control type="number" className="control" placeholder="Mobile Number" pattern="[789][0-9]{9}" required/>
+    <Form.Control type="number" className="control" name="mobileNumber" placeholder="Mobile Number" pattern="[789][0-9]{9}" required/>
   </Form.Group>
       </Col>
   </Row>
@@ -116,7 +126,7 @@ export default function JoinNJP() {
                 </Row>
             <Row className="mt-2">
                 <Col xs={11}>
-                    <input className="form-control control" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required/>
+                    <input className="form-control control" name="aadhar" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required/>
                 </Col>
             </Row>
             <Row className="mt-4">
@@ -124,17 +134,17 @@ export default function JoinNJP() {
                 <label className="mt-3 dob"><h6>Date Of Birth</h6></label>
                 </Col>
                 <Col xs={8}>
-                    <input className="form-control control" type="date" placeholder="Date" required/>
+                    <input className="form-control control" type="date" name="dob" placeholder="Date" required/>
                 </Col>
             </Row>
             <Row className="mt-4">
                 <Col xs={11}>
-                    <input className="form-control control" type="text" placeholder="Permanent Address" required/>
+                    <input className="form-control control" type="text" name="permanentAddress" placeholder="Permanent Address" required/>
                 </Col>
             </Row>
             <Row className="mt-4">
                 <Col xs={11}>
-                    <input className="form-control control" type="text" placeholder="Temporary Address" required/>
+                    <input className="form-control control" type="text" name="temporaryAddress" placeholder="Temporary Address" required/>
                 </Col>
             </Row>
             </form>
@@ -156,7 +166,7 @@ export default function JoinNJP() {
                         <h6>Upload Aadhar Card or Driving License or Voter Id Card or Passport</h6>
                     </Col>
                     <Col xs={6}>
-                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <input type="file" name="aadharCard" id="file" class="inputfile"/>
                     <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
@@ -165,7 +175,7 @@ export default function JoinNJP() {
                         <h6>Upload Pen Card</h6>
                     </Col>
                     <Col xs={6}>
-                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <input type="file" name="penCard" id="file" class="inputfile"/>
                     <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
@@ -174,7 +184,7 @@ export default function JoinNJP() {
                         <h6>Upload Residencial Proof</h6>
                     </Col>
                     <Col xs={6}>
-                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <input type="file" name="resident" id="file" class="inputfile"/>
                     <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
@@ -183,7 +193,7 @@ export default function JoinNJP() {
                         <h6>Upload Passport Size Photo</h6>
                     </Col>
                     <Col xs={6}>
-                    <input type="file" name="file" id="file" class="inputfile"/>
+                    <input type="file" name="photo" id="file" class="inputfile"/>
                     <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
@@ -205,16 +215,16 @@ export default function JoinNJP() {
       <Button id="prev1" style={{display:'none'}} variant="outline-dark">Prev</Button>
       </Col>
       <Col xs={2} id="colNext1 ml-5">
-      <Button type="submit" id="next1" variant="outline-info">Next</Button>
+      <Button id="next1" variant="outline-info">Next</Button>
       </Col>
       <Col xs={2} id="colNext2 ml-5">
-      <Button type="submit" id="next2" style={{display:'none'}} variant="outline-info">Next</Button>
+      <Button id="next2" style={{display:'none'}} variant="outline-info">Next</Button>
       </Col>
       <Col xs={2} id="colPrev2 mr-4">
       <Button id="prev2" style={{display:'none'}} variant="outline-dark">Prev</Button>
       </Col>
       <Col xs={2} id="colSubmit">
-      <Button type="submit" id="submit" style={{display:'none'}} variant="outline-info">Submit</Button>
+      <Button type="submit" id="submit" onClick={successAlert} style={{display:'none'}} variant="outline-info">Submit</Button>
       </Col>
   </Row>
   </Container>

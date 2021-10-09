@@ -7,9 +7,9 @@ import Menu from './component/Menus';
 import JoinNJP from './component/Join';
 import AdiShankaracharya from './component/AdiShankaracharyaAbout';
 import AboutSwami from './component/SwamiNischalananda';
-import AboutBharati from './component/BharatiKrishna';
 import AboutTimeline from './component/Timeline';
 import GurudevGallery from './component/Gallery';
+import Shishya from './component/DikshitShishya';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Route exact path="/join" component={JoinNJP}/>
             <Route exact path="/aboutAdiShankaracharyaJi" component={AdiShankaracharya}/>
             <Route exact path="/aboutSwamiNischalanandaSaraswatiJi" component={AboutSwami}/>
-            <Route exact path="/aboutBharatiKrishnaTeerathJi" component={AboutBharati}/>
+            <Route exact path="/dikshitShishya" component={Shishya}/>
             <Route exact path="/timeline" component={AboutTimeline}/>
             <Route exact path="/gallery" component={GurudevGallery}/>
           </Switch>
