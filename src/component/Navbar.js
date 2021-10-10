@@ -67,7 +67,11 @@ export default function NavBar() {
           </ul>
         </li>
         <span className="ml-2 bar"> | </span>
-      <Nav.Link href="#deets"><h6 className="font_nav">NJP LIVE </h6></Nav.Link>
+      <Nav.Link href="#deets">
+        <Link className="link" to="/live">
+        <h6 className="font_nav">NJP LIVE </h6>
+        </Link>
+        </Nav.Link>
       <Nav.Link href="#deets">
         <Link classame="link" to="/menu">
         <h6 className="font_nav"><span className="ml-2 fa fa-navicon "></span></h6>

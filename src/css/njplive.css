@@ -1,0 +1,10 @@
+.liveBack {
+    height: 750px;
+    background-image: url('https://pngmagic.com/product_images/blue-background-images-for-websites.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imageShadow {
+    box-shadow: 6px 6px 15px steelblue;
+}

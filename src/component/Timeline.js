@@ -13,7 +13,7 @@ export default function AboutTimeline() {
             <div class="row" style={{paddingBottom: '70px'}}>
                 <div class="col-md-12">
                     <div class="main-timeline5">
-                        <div class="timeline mt-3">
+                        <div class="timeline mt-3 ">
                             <div class="timeline-icon"><span class="year">15-09-2014</span></div>
                             <div class="timeline-content">
                                 <h3 class="title">IIT Patna, Patna</h3>
