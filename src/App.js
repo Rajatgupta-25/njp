@@ -11,6 +11,7 @@ import AboutTimeline from './component/Timeline';
 import GurudevGallery from './component/Gallery';
 import Shishya from './component/DikshitShishya';
 import NjpLive from './component/njpLive';
+import Visions from './component/Vision';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/timeline" component={AboutTimeline}/>
             <Route exact path="/gallery" component={GurudevGallery}/>
             <Route exact path="/live" component={NjpLive}/>
+            <Route exact path="/visions" component={Visions}/>
           </Switch>
       </BrowserRouter>
     </div>

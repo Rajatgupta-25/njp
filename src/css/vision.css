@@ -1,0 +1,30 @@
+.visionTopText {
+    color: rgb(88, 38, 38);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.back {
+    height: 450px;
+    background-image: url('https://www.nicepng.com/png/detail/5-51071_lord-krishna-png-pic-krishna-god-hd-png.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backColor {
+    background-color: rgb(245, 245, 245);
+}
+.head {
+    color: rgb(40, 47, 85);
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mission {
+    font-size: 65px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.value {
+    box-shadow: 4px 5px 8px grey;
+}

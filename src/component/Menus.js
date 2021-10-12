@@ -59,7 +59,9 @@ export default function Menu() {
                                     </div>
                                     <hr className="partition"/>
                                     <div className="about">
-                                        <p style={{fontWeight: '700'}}>OUR PURPOSE</p>
+                                        <Link className="link" to="/visions">
+                                        <p style={{fontWeight: '700'}}>VISION</p>
+                                        </Link>
                                     </div>
                                     <hr className="partition"/>
                                     <p className="connectWithUs">Connect With Us</p>

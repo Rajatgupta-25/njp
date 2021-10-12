@@ -15,7 +15,7 @@ export default function NavBar() {
       <Link to="/">
       <img className="logo_home" src={Images.partyLogo} alt="Party Logo"/>
       </Link>
-      <span className="orange_home2">NARSINGH PARTY</span>
+      <span className="orange_home2">NARSHINGH PARTY</span>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
