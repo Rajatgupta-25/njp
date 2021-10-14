@@ -12,6 +12,10 @@ import GurudevGallery from './component/Gallery';
 import Shishya from './component/DikshitShishya';
 import NjpLive from './component/njpLive';
 import Visions from './component/Vision';
+import PressReleases from './component/PressRelease';
+import Article from './component/Articles';
+import SpeechDebate from './component/SpeechDebates';
+import AboutNJP from './component/AboutNjp';
 
 function App() {
   return (
@@ -30,6 +34,10 @@ function App() {
             <Route exact path="/gallery" component={GurudevGallery}/>
             <Route exact path="/live" component={NjpLive}/>
             <Route exact path="/visions" component={Visions}/>
+            <Route exact path="/pressRelease" component={PressReleases}/>
+            <Route exact path="/articles" component={Article}/>
+            <Route exact path="/speechDebates" component={SpeechDebate}/>
+            <Route exact path="/aboutNjp" component={AboutNJP}/>
           </Switch>
       </BrowserRouter>
     </div>

@@ -25,7 +25,9 @@ export default function Menu() {
                                     <p className="mt-3 document">DOCUMENTS</p>
                                     <div className="about">
                                         <p>Goverdhan Peeth</p>
+                                        <Link to="/visions" className="link">
                                         <p>Visions</p>
+                                        </Link>
                                         <p>Manifesto</p>
                                     </div>
                                     <hr className=" partition"/>

@@ -29,6 +29,7 @@ const Images = {
     varunShaurya: require('../images/Member/varunShaurya.jpg').default,
     joinBack: require('../images/joinBack.jpg').default,
     adi: require('../images/About/adi.png').default,
+    aboutNjp: require('../images/mapBack.jpg').default,
 }
 
 export default Images;

@@ -1,0 +1,25 @@
+.pressBack {
+    background-color: rgb(239, 239, 240);
+}
+.box_press2{
+    height: 585px;
+    overflow:scroll;
+    overflow-x: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2d46b5;
+}
+.down_signPress2 {
+    background-color: rgb(239, 239, 240);
+    color:  #3c4775;
+}
+.down_signSpeeches2 {
+    background-color: rgb(239, 239, 240);
+    color:  #3f53af;
+    display: none;
+}
+.down_signArticles2 {
+    background-color: rgb(239, 239, 240);
+    color:  #2e3e86;
+    display: none;
+}

@@ -1,0 +1,45 @@
+.aboutNjpContent {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.aboutShadow{
+    box-shadow: 4px 4px 8px grey;
+}
+.fbSocial2 {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    background-color: steelblue;
+    color: white;
+    padding: 8px;
+}
+.twitterSocial2 {
+    position: absolute;
+    top: 30px;
+    left: 6px;
+    background-color: skyblue;
+    color: white;
+    padding: 5px;
+}
+.instaSocial2 {
+    position: absolute;
+    top: 55px;
+    left: 6px;
+    background-color:rgb(158, 47, 158);
+    color: white;
+    padding:5px;
+}
+.fbSocial2:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(37, 92, 138);
+}
+.twitterSocial2:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(94, 174, 206);
+}
+.instaSocial2:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(124, 25, 124);
+}

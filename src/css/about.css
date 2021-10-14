@@ -1,7 +1,7 @@
 .about_back {
     height: 780px;
     background-image: url('../images/About/aboutBack.png');
-    background-position: center;
+    background-position: left;
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -13,8 +13,9 @@
 }
 .about_content {
     padding-top: 30px;
-    color: midnightblue;
-    font-weight: 600;
+    color: white;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .readMore {
     color: white;

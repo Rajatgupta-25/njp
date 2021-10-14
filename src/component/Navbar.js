@@ -60,10 +60,18 @@ export default function NavBar() {
         <li className="ml-2 dropdown">
           <a className="dropbtn">RESOURCES <b className=" fa fa-angle-down"></b></a>
           <ul className="dropdown-menu">
+            <Link to="/pressRelease" className="link">
             <li className="ml-3"><a href="#">Press Release</a></li>
+            </Link>
+            <Link to="/articles" className="link">
             <li className="ml-3"><a href="#">Interview & Articles</a></li>
+            </Link>
+            <Link to="/speechDebates" className="link">
             <li className="ml-3"><a href="#">Speech & Debates</a></li>
+            </Link>
+            <Link to="gallery" className="link">
             <li className="ml-3"><a href="#">Photo Gallery</a></li>
+            </Link>
           </ul>
         </li>
         <span className="ml-2 bar"> | </span>
