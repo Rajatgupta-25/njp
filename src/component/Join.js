@@ -6,16 +6,38 @@ import FooterSection from './Footer';
 import Images from './Images';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Swal from 'sweetalert2'
-
-const successAlert = () => {
-    Swal.fire({  
-        title: 'Congratulations!',  
-        text: 'You send your request successfully! We will get back to you soon.',
-        icon: 'success'
-      }); 
-}
+import axios from 'axios';
 
 export default function JoinNJP() {
+
+    const [formdata, setFormdata] = useState({});
+
+    const handleForm = (e) => {
+        
+        e.preventDefault();
+        postData(formdata);
+        
+    };
+
+    const postData = (data) => {
+        axios.post(`https://www.njpbharat.org/njpbharat/public/api/users`, data).then(
+            (response)=>{
+                console.log(response);
+                Swal.fire({  
+                    title: 'Congratulations!',  
+                    text: 'You send your request successfully! We will get back to you soon.',
+                    icon: 'success'
+                  });       
+            }, (error)=>{
+                
+                Swal.fire({  
+                    title: 'Congratulations!',  
+                    text: 'You send your request successfully! We will get back to you soon.',
+                    icon: 'error'
+                  });
+            }
+        );
+    };
 
     return (
         <>
@@ -85,32 +107,30 @@ export default function JoinNJP() {
                     </Col>
                 </Row>
                                 <Row className="mt-2">
-                                    <Col xs={2} className="mt-1" >
-                                    <select class="form-control control" name="title"  style={{width: '80px'}} aria-label=".form-select-lg example">
-  <option selected value="Mr.">Mr.</option>
-  <option value="Mrs.">Mrs.</option>
-  <option value="Miss">Miss</option>
-</select>
-
-                                    </Col>
-                                    <Col xs={1}/>
-                                    <Col xs={8} className="mt-1">
+                                    
+                                    <Col xs={11} className="mt-1">
                     <Form.Group controlId="formBasicName">
-    <Form.Control className="control" name="from_name" type="text" placeholder="Name" required/>
+    <Form.Control className="control" name="name" type="text" placeholder="Name" required onChange={(e)=>{
+        setFormdata({...formdata, name: e.target.value});
+    }} />
   </Form.Group>
   </Col>
 </Row>
 <Row>
         <Col xs={11} className="mt-4">
         <Form.Group controlId="formBasicEmail">
-    <Form.Control type="email" className="control" name="reply_to" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+    <Form.Control type="email" className="control" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required onChange={(e)=>{
+        setFormdata({...formdata, email: e.target.value});
+    }}/>
   </Form.Group>
   </Col>
   </Row>
   <Row>
       <Col xs={11} className="mt-4">
       <Form.Group className="mb-3" controlId="formBasicZip">
-    <Form.Control type="number" className="control" name="mobileNumber" placeholder="Mobile Number" pattern="[789][0-9]{9}" required/>
+    <Form.Control type="number" className="control" name="mobile" placeholder="Mobile Number" pattern="[789][0-9]{9}" required onChange={(e)=>{
+        setFormdata({...formdata, mobile: e.target.value});
+    }}/>
   </Form.Group>
       </Col>
   </Row>
@@ -126,25 +146,72 @@ export default function JoinNJP() {
                 </Row>
             <Row className="mt-2">
                 <Col xs={11}>
-                    <input className="form-control control" name="aadhar" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required/>
+                    <input className="form-control control" name="aadhar_no" type="text" maxlength="14" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required onChange={(e)=>{
+        setFormdata({...formdata, aadhar_no: e.target.value});
+    }}/>
                 </Col>
             </Row>
             <Row className="mt-4">
-                <Col xs={3}>
-                <label className="mt-3 dob"><h6>Date Of Birth</h6></label>
+                <Col xs={5}>
+                <input type="text" className="form-control control" name="pincode" pattern="[0-9]{6}" placeholder="Pin Code" maxlength="6" onChange={(e)=>{
+        setFormdata({...formdata, pincode: e.target.value});
+    }}/>
                 </Col>
-                <Col xs={8}>
-                    <input className="form-control control" type="date" name="dob" placeholder="Date" required/>
+                <Col xs={6}>
+                    <input className="form-control control" type="text" name="constituency" placeholder="Constituency" required onChange={(e)=>{
+        setFormdata({...formdata, constituency: e.target.value});
+    }}/>
+                </Col>
+            </Row>
+            <Row className="mt-4">
+                <Col xs={5}>
+                <select name="state" id="state" size="1" onChange="makeSubmenu(this.value)" class="form form-control control" onChange={(e)=>{
+        setFormdata({...formdata, state: e.target.value});
+    }}>
+                        <option value="" disabled selected>State</option>
+<option value="AndhraPradesh">Andhra Pradesh</option>
+<option value="ArunachalPradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="HimachalPradesh">Himachal Pradesh</option>
+<option value="JammuAndKashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="MadhyaPradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="TamilNadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="UttarPradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="WestBengal">West Bengal</option>
+</select>
+                </Col>
+                <Col xs={6}>
+                <input type="text" placeholder="District" className="form-control control" name="district" onChange={(e)=>{
+        setFormdata({...formdata, district: e.target.value});
+    }}/>
                 </Col>
             </Row>
             <Row className="mt-4">
                 <Col xs={11}>
-                    <input className="form-control control" type="text" name="permanentAddress" placeholder="Permanent Address" required/>
-                </Col>
-            </Row>
-            <Row className="mt-4">
-                <Col xs={11}>
-                    <input className="form-control control" type="text" name="temporaryAddress" placeholder="Temporary Address" required/>
+                    <input className="form-control control" type="text" name="permanent_address" placeholder="Permanent Address" required onChange={(e)=>{
+        setFormdata({...formdata, permanent_address: e.target.value});
+    }}/>
                 </Col>
             </Row>
             </form>
@@ -163,47 +230,34 @@ export default function JoinNJP() {
                     </Row>
                 <Row className="mt-2">
                     <Col xs={6}>
-                        <h6>Upload Aadhar Card or Driving License or Voter Id Card or Passport</h6>
+                        <h6>Upload Aadhar Card/Driving License/Voter Id Card/Passport</h6>
                     </Col>
                     <Col xs={6}>
-                    <input type="file" name="aadharCard" id="file" class="inputfile"/>
+                    <input type="file" name="gov_id_photo" id="file" class="inputfile" onChange={(e)=>{
+        setFormdata({...formdata, gov_id_photo: e.target.value});
+    }}/>
                     <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
                 <Row className="mt-2">
                     <Col xs={6}>
-                        <h6>Upload Pen Card</h6>
+                        <h6>Passport Size Photo</h6>
                     </Col>
                     <Col xs={6}>
-                    <input type="file" name="penCard" id="file" class="inputfile"/>
+                    <input type="file" name="photo" id="file" class="inputfile" onChange={(e)=>{
+        setFormdata({...formdata, photo: e.target.value});
+    }}/>
                     <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
                     </Col>
                 </Row>
-                <Row className="mt-2">
-                    <Col xs={6}>
-                        <h6>Upload Residencial Proof</h6>
-                    </Col>
-                    <Col xs={6}>
-                    <input type="file" name="resident" id="file" class="inputfile"/>
-                    <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
-                    </Col>
-                </Row>
-                <Row className="mt-2">
-                    <Col xs={6}>
-                        <h6>Upload Passport Size Photo</h6>
-                    </Col>
-                    <Col xs={6}>
-                    <input type="file" name="photo" id="file" class="inputfile"/>
-                    <label for="file"><span className="fa fa-upload upload"> Upload a file</span></label>
-                    </Col>
-                </Row>
+                
                 <Row className="mt-2">
                     <Col xs={12}>
                     <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label=" I certify that above provided information is correct and there is no mistake. I know that all further communication will be done on above provided details." />
   </Form.Group>
                     </Col>
-                </Row>
+                </Row> 
                 </form>
             </Container>    
         </form>   
@@ -224,7 +278,10 @@ export default function JoinNJP() {
       <Button id="prev2" style={{display:'none'}} variant="outline-dark">Prev</Button>
       </Col>
       <Col xs={2} id="colSubmit">
-      <Button type="submit" id="submit" onClick={successAlert} style={{display:'none'}} variant="outline-info">Submit</Button>
+      <Button type="submit" id="submit" onClick={(e) => {
+          handleForm(e);
+
+      }} style={{display:'none'}} variant="outline-info">Submit</Button>
       </Col>
   </Row>
   </Container>

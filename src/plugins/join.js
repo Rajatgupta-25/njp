@@ -69,3 +69,27 @@ $(document).ready(function() {
         $("#colNext2").show();
     })
 });
+
+
+var districtByState = {
+    Odisha: ["Bhubaneswar","Puri","Cuttack"],
+    Maharashtra: ["Mumbai","Pune","Nagpur"],
+    Kerala: ["kochi","Kanpur"],
+    UttarPradesh: ["Agra", "Aligarh", "Allahdabad", "Ambedkar Nagar", "Amroha"]
+    }
+   function makeSubmenu(value) {
+    if(value.length==0) document.getElementById("districtSelect").innerHTML = "<option></option>";
+    else {
+    var districtOptions = "";
+    for(var districtId in districtByState[value]) {
+    districtOptions+="<option>"+districtByState[value][districtId]+"</option>";
+    }
+    document.getElementById("districtSelect").innerHTML = districtOptions;
+    }
+    }
+    
+   function resetSelection() {
+    document.getElementById("countrySelect").selectedIndex = 0;
+    document.getElementById("districtSelect").selectedIndex = 0;
+    }
+

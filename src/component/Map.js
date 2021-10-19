@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/map.css';
-import Images from './Images';
 import '../plugins/map';
+import ReactTooltip from 'react-tooltip';
 
 export default function Map() {
     return (
@@ -30,7 +30,7 @@ export default function Map() {
                     <div className="col-6  backMap mt-1">
                         {/* <img className="ml-5" src={Images.map} width="650px" height="620px" alt="map" /> */}
 
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full" width="850" height="566" style={{backgroundColor:'#e0f2f1'}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full" width="740" height="566" style={{backgroundColor:'#e0f2f1'}}>
 <rect width="100%" height="100%" fill="#e0f2f1"/>
 <path d="M 257.9126 275.6803 L 259.6815 275.9214 L 260.7139 274.9584 L 264.8214 276.2275 L 265.4679 274.6884 L 266.5907 274.3102 L 268.2822 272.442 L 271.1381 272.1942 L 271.6795 272.8986 L 271.4671 275.3595 L 273.0698 275.9704 L 272.7025 274.1938 L 274.1177 272.0498 L 274.2216 272.1569 L 274.2834 274.1129 L 274.3028 275.7772 L 275.6642 275.7973 L 275.562 273.9763 L 276.8052 274.1689 L 277.7739 275.3623 L 278.19 277.8722 L 277.7806 279.2383 L 278.305 280.1291 L 280.4669 278.5492 L 282.0943 279.9288 L 284.9007 280.2218 L 286.9037 279.8734 L 287.6171 281.5425 L 286.7305 283.3996 L 287.046 285.1159 L 287.9401 285.6826 L 287.992 287.1475 L 291.4139 286.7243 L 291.7441 284.0896 L 294.0689 283.7218 L 292.6184 285.8758 L 293.4546 287.4806 L 295.1196 286.9002 L 296.5658 288.5195 L 298.7155 289.5295 L 299.5625 291.8809 L 299.6794 293.5002 L 301.2766 292.8181 L 301.5124 294.7429 L 303.024 295.3518 L 305.9818 294.9411 L 306.1356 296.2944 L 307.0095 297.589 L 307.8319 297.3126 L 309.0807 298.8149 L 309.7105 300.7571 L 311.1919 300.823 L 311.3382 298.1583 L 314.3761 297.9275 L 315.0966 298.3286 L 316.093 299.0332 L 316.8789 301.7524 L 318.1876 301.4635 L 320.4379 305.5952 L 319.9667 306.6334 L 317.4413 306.4214 L 316.695 309.1303 L 315.156 307.1681 L 313.8192 306.6353 L 311.8459 307.1777 L 310.8931 308.7813 L 308.8889 308.3678 L 307.9294 309.6935 L 306.0531 309.5805 L 303.4413 307.6813 L 300.4578 306.9802 L 298.7817 304.4115 L 296.6895 304.7148 L 295.4898 301.7095 L 294.3832 301.5279 L 291.3113 302.2111 L 290.5698 303.2103 L 290.441 304.9413 L 287.6532 303.9861 L 287.3004 301.2897 L 288.4284 300.9268 L 289.5508 299.68 L 290.2285 297.5225 L 288.749 297.39 L 283.9039 295.7666 L 282.6273 295.9238 L 282.5136 297.8196 L 281.1688 299.5846 L 279.8035 298.6223 L 278.8527 298.6556 L 278.9597 300.7951 L 277.389 299.1424 L 274.7344 298.853 L 273.6441 299.7382 L 271.9609 298.7353 L 270.9499 300.4537 L 269.9817 299.3427 L 266.5423 297.7483 L 265.6902 298.1804 L 264.456 297.0924 L 262.317 298.134 L 261.6373 299.5144 L 261.8973 301.0168 L 259.6026 301.5196 L 258.8563 302.7428 L 256.323 304.2597 L 254.0492 304.9489 L 251.7596 305.1257 L 251.395 303.5261 L 250.5798 303.3289 L 249.6971 307.4951 L 248.8312 308.7591 L 246.9751 307.6343 L 247.5272 305.3236 L 246.3985 303.6862 L 246.6573 302.008 L 248.1146 301.4545 L 248.3564 300.4467 L 249.774 299.4619 L 254.8276 297.5855 L 258.0755 295.0622 L 260.6544 294.2524 L 261.2604 292.7758 L 259.5558 289.4103 L 258.842 291.2228 L 255.818 290.8005 L 253.7464 289.418 L 254.0968 287.394 L 251.6316 286.6957 L 252.9938 284.7904 L 255.7376 283.8588 L 255.4843 283.0922 L 256.6487 280.6908 L 258.7168 280.636 L 259.6715 278.9196 L 258.0628 277.9217 L 257.9126 275.6803 Z" fill="#000" fill-opacity="1" stroke="#000" stroke-width="0" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="matrix(1.100000023841858,0,0,1.100000023841858,-42.5000114440918,-28.300016403198242)" clip-path="none" style={{filter: 'url(#f1)'}}/>
 <path d="M 270.9622 252.1023 L 269.5461 252.5422 L 268.6516 250.6858 L 269.0451 249.6725 L 268.4399 247.145 L 265.4912 245.0082 L 265.63 241.601 L 266.3144 240.4285 L 267.566 240.2527 L 266.5094 237.631 L 266.6196 236.0733 L 265.6518 235.3205 L 264.458 232.3836 L 263.7827 229.7772 L 262.5219 227.9847 L 261.3441 227.087 L 259.4801 227.1791 L 257.6939 225.5764 L 256.7565 227.5823 L 254.8633 227.6799 L 253.1539 229.2094 L 251.6827 228.252 L 252.5618 227.0453 L 252.5507 225.92 L 251.1826 225.381 L 252.5142 223.9958 L 249.5231 220.1329 L 249.1272 217.7343 L 253.9612 217.6408 L 255.8331 215.6301 L 256.3864 216.5922 L 257.5464 216.6448 L 258.4092 215.3815 L 260.4297 217.6685 L 262.4902 217.0043 L 262.4577 214.5933 L 263.8334 212.6525 L 264.2931 213.9734 L 266.49 213.4449 L 266.2692 212.5341 L 268.1193 211.2423 L 269.4014 214.1098 L 271.9696 216.6475 L 275.4831 217.5709 L 277.8928 215.493 L 278.7421 214.1527 L 279.9961 214.3688 L 281.7483 215.6537 L 283.288 215.9273 L 283.6134 218.197 L 285.335 217.2093 L 286.4475 217.163 L 287.6108 215.6054 L 288.1795 216.2237 L 289.6594 215.1072 L 292.0699 214.9368 L 293.5941 214.1472 L 294.4233 212.8263 L 296.1826 213.4408 L 296.5214 214.7539 L 298.4076 216.6179 L 300.1161 216.3622 L 301.3765 214.5254 L 302.3035 215.4784 L 302.3229 216.6559 L 304.7052 218.7427 L 306.7384 217.4429 L 306.7622 218.4 L 308.1497 219.2478 L 308.3673 220.4238 L 307.7566 221.0535 L 307.3202 224.4841 L 306.0492 227.4868 L 304.8281 229.4093 L 303.7073 229.7627 L 301.8005 233.1843 L 302.8631 234.1719 L 303.0192 236.1751 L 302.3253 237.0762 L 300.8541 236.3913 L 299.5748 235.1698 L 298.9069 237.6183 L 297.387 240.1971 L 296.6966 242.5916 L 295.4533 244.986 L 293.3809 246.4596 L 290.4798 246.6439 L 288.2695 244.4336 L 287.5588 244.8644 L 285.232 242.8313 L 285.6232 240.7728 L 285.0001 239.5295 L 283.3934 239.0246 L 281.2869 239.4355 L 279.9037 238.4886 L 277.2277 239.6533 L 278.4013 240.5962 L 276.9697 242.3852 L 276.179 244.0642 L 277.353 246.1394 L 275.4554 249.2575 L 276.1862 250.7078 L 274.6211 251.0564 L 272.5197 250.6864 L 270.9622 252.1023 Z" fill="#000" fill-opacity="1" stroke="#000" stroke-width="0" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="matrix(1.100000023841858,0,0,1.100000023841858,-42.5000114440918,-28.300016403198242)" clip-path="none" style={{filter: 'url(#f1)'}}/>
@@ -184,84 +184,87 @@ export default function Map() {
 <path d="M 537.7328 414.4359 L 536.0742 417.1226 L 532.6365 416.7658 L 531.7423 416.4001 L 529.2871 417.3345 L 528.523 419.4471 L 527.5472 419.5316 L 526.9008 418.3265 L 525.2429 418.7482 L 525.1767 416.6149 L 526.3978 415.3612 L 525.7942 413.4301 L 523.3425 414.3326 L 520.9289 412.9508 L 519.4545 413.0894 L 518.9199 413.9482 L 519.0883 411.6659 L 519.7807 411.7637 L 520.1002 409.6289 L 519.4696 406.7067 L 520.8825 404.926 L 520.0407 403.8072 L 519.7708 401.3526 L 521.3197 401.1388 L 520.6459 399.4742 L 521.6835 396.1634 L 521.0882 394.3647 L 522.5701 393.2932 L 524.5014 394.4955 L 525.5739 392.8499 L 527.0296 392.9558 L 527.5401 391.9274 L 532.2556 391.6274 L 534.1318 394.6494 L 535.0398 392.7812 L 537.4721 391.6183 L 538.0923 393.5606 L 539.7042 392.9995 L 539.2912 394.5412 L 540.4707 396.951 L 542.0956 395.0621 L 542.8205 395.966 L 545.2861 395.8066 L 544.7919 397.406 L 543.4202 398.654 L 542.7452 400.3975 L 545.8719 402.1333 L 546.0764 403.085 L 545.0816 406.8009 L 544.1252 408.5637 L 543.0956 409.1932 L 540.6371 408.2957 L 538.0658 409.1614 L 536.8502 410.1595 L 538.5053 411.6256 L 539.1509 414.2343 L 537.7328 414.4359 Z" fill="#8cd5f7" fill-opacity="1" stroke="#000000" stroke-width="0.3636363557547579" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="matrix(1.100000023841858,0,0,1.100000023841858,-42.5000114440918,-28.300016403198242)" clip-path="none"/>
 <path d="M -5 -5 L 117.6641 -5 L 117.6641 115 L -5 115 L -5 -5 Z" fill="rgba(255,255,255,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="matrix(1,0,0,1,5,451)" clip-path="none"/>
 <path fill="rgba(255,255,255,0)" fill-opacity="0" stroke="#ccc" stroke-width="0" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="matrix(1,0,0,1,15,10)" clip-path="none"/><defs><filter id="f1" x="-100%" y="-100%" width="1000%" height="1000%"><feOffset result="offOut" in="SourceGraphic" dx="-9.799999999999999" dy="9.799999999999999"></feOffset><feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"></feColorMatrix><feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="8"></feGaussianBlur><feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend></filter></defs>
-<text transform="matrix(1 0 0 1 251.7404 295.1737)" style={{fontFamily:'Tahoma',  fontSize:'10px'}} class="maplabels1" data-toggle="tooltip" data-placement="top" title="Agra">Agra</text>
-<text transform="matrix(1 0 0 1 249.1832 221.9835)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Aligarh</text>
-<text transform="matrix(0.1378 -0.9905 0.9905 0.1378 464.0908 508.2021)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Allahabad</text>
-<text transform="matrix(1 0 0 1 510.1673 339.077)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Ambed.</text>
-<text transform="matrix(0.6455 -0.7638 0.7638 0.6455 460.7762 360.9961)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Amethi</text>
-<text transform="matrix(1 0 0 1 271.2007 151.0291)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Amro.</text>
-<text transform="matrix(0.5409 -0.8411 0.8411 0.5409 338.5428 334.4271)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Auraiya</text>
-<text transform="matrix(1 0 0 1 523.6597 366.5096)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Azamgarh</text>
-<text transform="matrix(1 0 0 1 161.9664 138.9542)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Baghpat</text>
-<text transform="matrix(0.9211 -0.3892 0.3892 0.9211 463.2308 200.2725)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Bahraich</text>
-<text transform="matrix(1 0 0 1 640.8467 379.9713)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Ballia</text>
-<text transform="matrix(0.9082 -0.4186 0.4186 0.9082 520.1863 233.0559)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Balrampur</text>
-<text transform="matrix(1 0 0 1 394.4182 411.89)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Banda</text>
-<text transform="matrix(0.5711 0.8209 -0.8209 0.5711 437.4205 281.8596)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Barabanki</text>
-<text transform="matrix(1 0 0 1 323.3301 191.5563)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Bareilly</text>
-<text transform="matrix(1 0 0 1 510.5469 310.9161)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Basti</text>
-<text transform="matrix(1 0 0 1 273.1896 112.4877)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Bijnor</text>
-<text transform="matrix(1 0 0 1 306.1765 215.9465)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Budaun</text>
-<text transform="matrix(1 0 0 1 244.7924 191.5565)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Buland.</text>
-<text transform="matrix(1 0 0 1 575.5642 451.8116)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Chandauli</text>
-<text transform="matrix(0.141 -0.99 0.99 0.141 428.5214 513.4404)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Chitrakoot</text>
-<text transform="matrix(1 0 0 1 622.1411 351.1968)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Deoria</text>
-<text transform="matrix(1 0 0 1 287.7739 254.6229)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Etah</text>
-<text transform="matrix(1 0 0 1 312.1006 311.865)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Etaw.</text>
-<text transform="matrix(1 0 0 1 483.2252 324.114)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Faiz.</text>
-<text transform="matrix(1 0 0 1 334.2027 263.6756)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Farruk.</text>
-<text transform="matrix(0.9003 0.4352 -0.4352 0.9003 400.1735 371.0752)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Fatehpur</text>
-<text transform="matrix(0.835 0.5502 -0.5502 0.835 267.3981 273.78)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Firozabad</text>
-<text transform="matrix(1 0 0 1 139.4956 203.8853)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">G.Buddha Nagar</text>
-<text transform="matrix(1 0 0 1 155.2759 170.164)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Ghaziabad</text>
-<text transform="matrix(1 0 0 1 600.6227 425.3816)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Ghazipur</text>
-<text transform="matrix(1 0 0 1 474.9871 292.1737)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Gonda</text>
-<text transform="matrix(0.1679 -0.9858 0.9858 0.1679 568.7773 336.712)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Gorakh.</text>
-<text transform="matrix(1 0 0 1 347.1141 394.1575)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Hamirpur</text>
-<text transform="matrix(0.9593 -0.2824 0.2824 0.9593 241.5092 169.1638)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Hapur</text>
-<text transform="matrix(1 0 0 1 367.0016 273.5466)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Hardoi</text>
-<text transform="matrix(0.9066 -0.422 0.422 0.9066 258.7356 258.0882)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Hathras</text>
-<text transform="matrix(1 0 0 1 327.2559 367.5265)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Jalaun</text>
-<text transform="matrix(1 0 0 1 505.1674 397.0157)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Jaunpur</text>
-<text transform="matrix(1 0 0 1 309.2611 400.3839)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Jhansi</text>
-<text transform="matrix(1 0 0 1 345.4292 295.8719)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Kann.</text>
-<text transform="matrix(-8.785660e-03 -1 1 -8.785660e-03 369.613 353.3934)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">K.Dehat</text>
-<text transform="matrix(0.1998 -0.9798 0.9798 0.1998 388.2364 364.44)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">K.Nagar</text>
-<text transform="matrix(0.8351 0.5501 -0.5501 0.8351 294.6866 227.1866)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Kasganj</text>
-<text transform="matrix(1 0 0 1 450.171 415.9966)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Kaush.</text>
-<text transform="matrix(1 0 0 1 618.1694 300.8413)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Kushinagar</text>
-<text transform="matrix(0.8883 -0.4592 0.4592 0.8883 431.8991 170.1641)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Lakhimpur Kheri</text>
-<text transform="matrix(1 0 0 1 278.3787 486.1624)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Lalitpur</text>
-<text transform="matrix(0.6001 0.7999 -0.7999 0.6001 412.2595 294.524)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Lucknow</text>
-<text transform="matrix(0.9181 -0.3964 0.3964 0.9181 600.6226 260.026)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Maharajganj</text>
-<text transform="matrix(1 0 0 1 340.7188 419.3675)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mahoba</text>
-<text transform="matrix(0.8271 0.5621 -0.5621 0.8271 307.9939 271.8262)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mainpuri</text>
-<text transform="matrix(1 0 0 1 172.1392 249.9367)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mathura</text>
-<text transform="matrix(1 0 0 1 563.4839 374.017)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mau</text>
-<text transform="matrix(1 0 0 1 232.536 141.2783)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Meerut</text>
-<text transform="matrix(1 0 0 1 510.547 451.8121)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mirzapur</text>
-<text transform="matrix(0.9073 -0.4204 0.4204 0.9073 320.7185 121.2275)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Moradabad</text>
-<text transform="matrix(0.8307 -0.5567 0.5567 0.8307 264.9391 83.1898)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Muzaffarnagar</text>
-<text transform="matrix(1 0 0 1 360.7057 175.8562)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Pilibhit</text>
-<text transform="matrix(0.9203 -0.3912 0.3912 0.9203 460.7752 394.0564)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Pratapgarh</text>
-<text transform="matrix(1 0 0 1 422.8093 360.9959)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Rae B.</text>
-<text transform="matrix(0.8659 -0.5002 0.5002 0.8659 340.7189 137.6359)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Rampur</text>
-<text transform="matrix(1 0 0 1 155.2756 62.5034)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Saharanpur</text>
-<text transform="matrix(9.512527e-02 -0.9955 0.9955 9.512527e-02 291.2242 200.2728)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sambhal</text>
-<text transform="matrix(0.1966 -0.9805 0.9805 0.1966 548.7535 328.6162)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Sant K.</text>
-<text transform="matrix(1 0 0 1 510.1672 423.8869)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Sant</text>
-<text transform="matrix(0.7498 -0.6617 0.6617 0.7498 346.7318 242.0902)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Shahjahanpur</text>
-<text transform="matrix(1 0 0 1 165.1143 104.3817)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Shamli</text>
-<text transform="matrix(0.9316 -0.3635 0.3635 0.9316 493.4843 215.946)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Shravasti</text>
-<text transform="matrix(0.9093 -0.4162 0.4162 0.9093 554.9447 249.9367)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Siddharth Nagar</text>
-<text transform="matrix(1 0 0 1 404.4952 255.6229)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sitapur</text>
-<text transform="matrix(1 0 0 1 582.1604 505.7619)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sonbhadra</text>
-<text transform="matrix(0.9243 0.3817 -0.3817 0.9243 486.4233 348.321)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sultan.</text>
-<text transform="matrix(0.5946 0.804 -0.804 0.5946 395.1865 312.1048)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Unnao</text>
-<text transform="matrix(1 0 0 1 533.8652 419.3673)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Vara.</text>
+<text data-tip data-for="Agra" transform="matrix(1 0 0 1 251.7404 295.1737)" style={{fontFamily:'Tahoma',  fontSize:'10px'}} class="maplabels1">Agra</text>
+<text data-tip data-for="Aligarh" transform="matrix(1 0 0 1 249.1832 221.9835)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Aligarh</text>
+<text data-tip data-for="Allahabad" transform="matrix(0.1378 -0.9905 0.9905 0.1378 464.0908 508.2021)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Allahabad</text>
+<text data-tip data-for="AmbedkarNagar" transform="matrix(1 0 0 1 510.1673 339.077)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Ambed.</text>
+<text data-tip data-for="Amethi" transform="matrix(0.6455 -0.7638 0.7638 0.6455 460.7762 360.9961)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Amethi</text>
+<text data-tip data-for="Amroha" transform="matrix(1 0 0 1 271.2007 151.0291)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Amro.</text>
+<text data-tip data-for="Auraiya" transform="matrix(0.5409 -0.8411 0.8411 0.5409 338.5428 334.4271)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Auraiya</text>
+<text data-tip data-for="Azamgarh" transform="matrix(1 0 0 1 523.6597 366.5096)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Azamgarh</text>
+<text data-tip data-for="Baghpat" transform="matrix(1 0 0 1 161.9664 138.9542)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Baghpat</text>
+<text data-tip data-for="Bahraich" transform="matrix(0.9211 -0.3892 0.3892 0.9211 463.2308 200.2725)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Bahraich</text>
+<text data-tip data-for="Ballia" transform="matrix(1 0 0 1 640.8467 379.9713)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Ballia</text>
+<text data-tip data-for="Balrampur" transform="matrix(0.9082 -0.4186 0.4186 0.9082 520.1863 233.0559)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Balrampur</text>
+<text data-tip data-for="Banda" transform="matrix(1 0 0 1 394.4182 411.89)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Banda</text>
+<text data-tip data-for="Barabanki" transform="matrix(0.5711 0.8209 -0.8209 0.5711 437.4205 281.8596)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Barabanki</text>
+<text data-tip data-for="Bareilly" transform="matrix(1 0 0 1 323.3301 191.5563)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Bareilly</text>
+<text data-tip data-for="Basti" transform="matrix(1 0 0 1 510.5469 310.9161)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Basti</text>
+<text data-tip data-for="Bijnor" transform="matrix(1 0 0 1 273.1896 112.4877)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Bijnor</text>
+<text data-tip data-for="Budaun" transform="matrix(1 0 0 1 306.1765 215.9465)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Budaun</text>
+<text data-tip data-for="Bulandshahr" transform="matrix(1 0 0 1 244.7924 191.5565)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Buland.</text>
+<text data-tip data-for="Chandauli" transform="matrix(1 0 0 1 575.5642 451.8116)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Chandauli</text>
+<text data-tip data-for="Chitrakoot" transform="matrix(0.141 -0.99 0.99 0.141 428.5214 513.4404)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Chitrakoot</text>
+<text data-tip data-for="Deoria" transform="matrix(1 0 0 1 622.1411 351.1968)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Deoria</text>
+<text data-tip data-for="Etah" transform="matrix(1 0 0 1 287.7739 254.6229)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Etah</text>
+<text data-tip data-for="Etawah" transform="matrix(1 0 0 1 312.1006 311.865)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Etaw.</text>
+<text data-tip data-for="Faizabad" transform="matrix(1 0 0 1 483.2252 324.114)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Faiz.</text>
+<text data-tip data-for="Farrukhabad" transform="matrix(1 0 0 1 334.2027 263.6756)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Farruk.</text>
+<text data-tip data-for="Fatehpur" transform="matrix(0.9003 0.4352 -0.4352 0.9003 400.1735 371.0752)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Fatehpur</text>
+<text data-tip data-for="Firozabad" transform="matrix(0.835 0.5502 -0.5502 0.835 267.3981 273.78)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Firozabad</text>
+<text data-tip data-for="Gautam Buddha Nagar" transform="matrix(1 0 0 1 139.4956 203.8853)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">G.Buddha Nagar</text>
+<text data-tip data-for="Ghaziabad" transform="matrix(1 0 0 1 155.2759 170.164)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Ghaziabad</text>
+<text data-tip data-for="Ghazipur" transform="matrix(1 0 0 1 600.6227 425.3816)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Ghazipur</text>
+<text data-tip data-for="Gonda" transform="matrix(1 0 0 1 474.9871 292.1737)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Gonda</text>
+<text data-tip data-for="Gorakhpur" transform="matrix(0.1679 -0.9858 0.9858 0.1679 568.7773 336.712)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Gorakh.</text>
+<text data-tip data-for="Hamirpur" transform="matrix(1 0 0 1 347.1141 394.1575)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Hamirpur</text>
+<text data-tip data-for="Hapur" transform="matrix(0.9593 -0.2824 0.2824 0.9593 241.5092 169.1638)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Hapur</text>
+<text data-tip data-for="Hardoi" transform="matrix(1 0 0 1 367.0016 273.5466)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Hardoi</text>
+<text data-tip data-for="Hathras" transform="matrix(0.9066 -0.422 0.422 0.9066 258.7356 258.0882)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Hathras</text>
+<text data-tip data-for="Jalaun" transform="matrix(1 0 0 1 327.2559 367.5265)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Jalaun</text>
+<text data-tip data-for="Jaunpur" transform="matrix(1 0 0 1 505.1674 397.0157)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Jaunpur</text>
+<text data-tip data-for="Jhansi" transform="matrix(1 0 0 1 309.2611 400.3839)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Jhansi</text>
+<text data-tip data-for="Kannauj" transform="matrix(1 0 0 1 345.4292 295.8719)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Kann.</text>
+<text data-tip data-for="KanpurDehat" transform="matrix(-8.785660e-03 -1 1 -8.785660e-03 369.613 353.3934)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">K.Dehat</text>
+<text data-tip data-for="KanpurNagar" transform="matrix(0.1998 -0.9798 0.9798 0.1998 388.2364 364.44)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">K.Nagar</text>
+<text data-tip data-for="Kasganj" transform="matrix(0.8351 0.5501 -0.5501 0.8351 294.6866 227.1866)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Kasganj</text>
+<text data-tip data-for="Kaushambi" transform="matrix(1 0 0 1 450.171 415.9966)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Kaush.</text>
+<text data-tip data-for="Kushinagar" transform="matrix(1 0 0 1 618.1694 300.8413)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Kushinagar</text>
+<text data-tip data-for="LakhimpurKheri" transform="matrix(0.8883 -0.4592 0.4592 0.8883 431.8991 170.1641)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Lakhimpur Kheri</text>
+<text data-tip data-for="Lalitpur" transform="matrix(1 0 0 1 278.3787 486.1624)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Lalitpur</text>
+<text data-tip data-for="Lucknow" transform="matrix(0.6001 0.7999 -0.7999 0.6001 412.2595 294.524)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Lucknow</text>
+<text data-tip data-for="Maharajganj" transform="matrix(0.9181 -0.3964 0.3964 0.9181 600.6226 260.026)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Maharajganj</text>
+<text data-tip data-for="Mahoba" transform="matrix(1 0 0 1 340.7188 419.3675)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mahoba</text>
+<text data-tip data-for="Mainpuri" transform="matrix(0.8271 0.5621 -0.5621 0.8271 307.9939 271.8262)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mainpuri</text>
+<text data-tip data-for="Mathura" transform="matrix(1 0 0 1 172.1392 249.9367)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mathura</text>
+<text data-tip data-for="Mau" transform="matrix(1 0 0 1 563.4839 374.017)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mau</text>
+<text data-tip data-for="Meerut" transform="matrix(1 0 0 1 232.536 141.2783)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Meerut</text>
+<text data-tip data-for="Mirzapur" transform="matrix(1 0 0 1 510.547 451.8121)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Mirzapur</text>
+<text data-tip data-for="Moradabad" transform="matrix(0.9073 -0.4204 0.4204 0.9073 320.7185 121.2275)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Moradabad</text>
+<text data-tip data-for="Muzaffarnagar" transform="matrix(0.8307 -0.5567 0.5567 0.8307 264.9391 83.1898)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Muzaffarnagar</text>
+<text data-tip data-for="Pilibhit" transform="matrix(1 0 0 1 360.7057 175.8562)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Pilibhit</text>
+<text data-tip data-for="Pratapgarh" transform="matrix(0.9203 -0.3912 0.3912 0.9203 460.7752 394.0564)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Pratapgarh</text>
+<text data-tip data-for="Rae Bareli" transform="matrix(1 0 0 1 422.8093 360.9959)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Rae B.</text>
+<text data-tip data-for="Rampur" transform="matrix(0.8659 -0.5002 0.5002 0.8659 340.7189 137.6359)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Rampur</text>
+<text data-tip data-for="Saharanpur" transform="matrix(1 0 0 1 155.2756 62.5034)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Saharanpur</text>
+<text data-tip data-for="Sambhal" transform="matrix(9.512527e-02 -0.9955 0.9955 9.512527e-02 291.2242 200.2728)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sambhal</text>
+<text data-tip data-for="SantKabirNagar" transform="matrix(0.1966 -0.9805 0.9805 0.1966 548.7535 328.6162)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Sant K.</text>
+<text data-tip data-for="Sant" transform="matrix(1 0 0 1 510.1672 423.8869)" style={{fontFamily:'Tahoma', fontSize:'9px'}} class="maplabels1">Sant</text>
+<text data-tip data-for="Shahjahanpur" transform="matrix(0.7498 -0.6617 0.6617 0.7498 346.7318 242.0902)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Shahjahanpur</text>
+<text data-tip data-for="Shamli" transform="matrix(1 0 0 1 165.1143 104.3817)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Shamli</text>
+<text data-tip data-for="Shravasti" transform="matrix(0.9316 -0.3635 0.3635 0.9316 493.4843 215.946)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Shravasti</text>
+<text data-tip data-for="SiddharthNagar" transform="matrix(0.9093 -0.4162 0.4162 0.9093 554.9447 249.9367)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Siddharth Nagar</text>
+<text data-tip data-for="Sitapur" transform="matrix(1 0 0 1 404.4952 255.6229)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sitapur</text>
+<text data-tip data-for="Sonbhadra" transform="matrix(1 0 0 1 582.1604 505.7619)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sonbhadra</text>
+<text data-tip data-for="Sultanpur" transform="matrix(0.9243 0.3817 -0.3817 0.9243 486.4233 348.321)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Sultan.</text>
+<text data-tip data-for="Unnau" transform="matrix(0.5946 0.804 -0.804 0.5946 395.1865 312.1048)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Unnao</text>
+<text data-tip data-for="Varanasi" transform="matrix(1 0 0 1 533.8652 419.3673)" style={{fontFamily:'Tahoma', fontSize:'10px'}} class="maplabels1">Vara.</text>
+
+
 
 </svg>
-
+<ReactTooltip id="Agra" place="top" effect="solid">Agra</ReactTooltip>
+<ReactTooltip id="Mathura" place="top" effect="solid">Mathura</ReactTooltip>
                     </div>
                 </div>
             </div>

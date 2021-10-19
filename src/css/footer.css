@@ -142,3 +142,14 @@
     color: red;
     font-size: 20px;
 }
+
+
+.download {
+    background-color: #5562d3;
+    color: white;
+}
+
+.download:hover {
+    background-color: #3e447d;
+    color: white;
+}

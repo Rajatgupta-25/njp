@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../css/footer.css';
+import {Modal, Button} from 'react-bootstrap';
 
 export default function FooterSection() {
+
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     return (
         <>
             <div className="container-fluid footer-area">
@@ -22,7 +29,7 @@ export default function FooterSection() {
                                     <p className="mt-3 document">DOCUMENTS</p>
                                     <div className="about">
                                         <p>Goverdhan Peeth</p>
-                                        <p>Visions</p>
+                                        <p>Vision</p>
                                         <p>Manifesto</p>
                                     </div>
                                     <hr className=" partition"/>
@@ -53,6 +60,10 @@ export default function FooterSection() {
                                     <hr className="partition"/>
                                     <div className="about">
                                         <p style={{fontWeight: '700'}}>MEMBERS</p>
+                                    </div>
+                                    <hr className="partition"/>
+                                    <div className="about">
+                                        <p  onClick={handleShow} style={{fontWeight: '700'}}>DOWNLOAD ID CARD</p>
                                     </div>
                                     <hr className="partition"/>
                                     <div className="about">
@@ -117,6 +128,36 @@ export default function FooterSection() {
                     </div>
                 </div>
             </div>
+
+
+            <Modal
+        show={show}
+        onHide={handleClose}
+        keyboard={false}
+      >
+        <Modal.Header style={{backgroundColor: '#3e447d'}}>
+          <Modal.Title><h3 style={{color: 'white'}}>Enter Details </h3></Modal.Title>
+          
+        </Modal.Header>
+        <Modal.Body>
+          <div className="container">
+              <div className="row mt-4">
+                    <div className="col-10 ml-4">
+                        <form>
+                        <input className="form-control control" name="aadhar_no" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required maxlength="14"/>
+                        </form>
+                    </div>
+              </div>
+              <div className="row mt-3">
+                    <div className="col-11 text-center">
+                        <Button className="download">Download</Button>
+                    </div>
+                </div>
+          </div>
+        </Modal.Body>
+        
+      </Modal>
+
         </>
     );
 }
