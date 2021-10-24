@@ -1,8 +1,7 @@
-
-
 .logo_home {
-    width: 180px;
+    width: 120px;
     height: 80px;
+    transform: rotate(-10deg);
 }
 .orange_home {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,4 +82,24 @@
  }
  .link:hover {
    text-decoration: none;
+ }
+
+ @media only screen and (max-width: 600px) {
+   .bar {
+     display: none;
+   }
+   .the-blur{
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 80px;
+    margin-bottom: 10px;
+    background: grey;
+    z-index:1010;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(50px);
+ }
  }

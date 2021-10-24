@@ -1,5 +1,5 @@
 const Images = {
-    partyLogo: require('../images/partyLogoEdited.png').default,
+    partyLogo: require('../images/bansuri.png').default,
     image1: require('../images/MainCarousel/img1.jpg').default,
     image2: require('../images/MainCarousel/img3.jpg').default,
     image3: require('../images/MainCarousel/img7.jpeg').default,
@@ -30,6 +30,7 @@ const Images = {
     joinBack: require('../images/joinBack.jpg').default,
     adi: require('../images/About/adi.png').default,
     aboutNjp: require('../images/mapBack.jpg').default,
+    ramPandey: require('../images/Member/ramPandey.jpg').default,
 }
 
 export default Images;

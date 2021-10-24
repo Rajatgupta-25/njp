@@ -33,6 +33,11 @@
 .memberImage {
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 4px 4px 6px grey;
+    opacity: 0.9;
+}
+.memberImage:hover{
+    opacity:  1;
 }
 .imageContent {
     font-size: 12px;

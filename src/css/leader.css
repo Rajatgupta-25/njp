@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
   }
   .col-1 {width: 8.33%;}
@@ -12,7 +12,7 @@
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;} */
 
 .leader_image {
     width:430px;
@@ -32,7 +32,7 @@
     width: 880px;
     height: 380px;
 }
-.side_link {
+.side_link1 {
     padding: 10px;
     height: 140px;
     width: 120px;
@@ -40,7 +40,40 @@
     background:  coral;
     box-shadow: 5px 4px 14px grey;
 }
-.side_link:hover {
+.side_link1:hover {
+    color: #f7832a;
+    background: lightgoldenrodyellow;
+}
+.side_link1 span{
+    font-size: 23px;
+}
+.side_link2 span{
+    font-size: 23px;
+}
+.side_link3 span{
+    font-size: 23px;
+}
+.side_link2 {
+    padding: 10px;
+    height: 140px;
+    width: 120px;
+    color: white;
+    background:  coral;
+    box-shadow: 5px 4px 14px grey;
+}
+.side_link2:hover {
+    color: #f7832a;
+    background: lightgoldenrodyellow;
+}
+.side_link3 {
+    padding: 10px;
+    height: 140px;
+    width: 120px;
+    color: white;
+    background:  coral;
+    box-shadow: 5px 4px 14px grey;
+}
+.side_link3:hover {
     color: #f7832a;
     background: lightgoldenrodyellow;
 }
@@ -78,6 +111,63 @@
     background: red;
     border-color: red;
 }
-@media only screen and (min-width: 600px) {
 
-}
+@media only screen and (max-width: 600px) {
+    .side_link1 {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        padding: 5px;
+        height: 80px;
+        width: 80px;
+        color: white;
+        background:  coral;
+        box-shadow: 5px 4px 14px grey;
+    }
+    .side_link1:hover {
+        color: #f7832a;
+        background: lightgoldenrodyellow;
+    }
+    .side_link2 {
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        padding: 5px;
+        height: 80px;
+        width: 80px;
+        color: white;
+        background:  coral;
+        box-shadow: 5px 4px 14px grey;
+    }
+    .side_link2:hover {
+        color: #f7832a;
+        background: lightgoldenrodyellow;
+    }
+    .side_link3 {
+        position: absolute;
+        top: 150px;
+        right: 15px;
+        padding: 5px;
+        height: 80px;
+        width: 80px;
+        color: white;
+        background:  coral;
+        box-shadow: 5px 4px 14px grey;
+    }
+    .side_link3:hover {
+        color: #f7832a;
+        background: lightgoldenrodyellow;
+    }
+    .side_link1 span{
+        font-size: 15px;
+    }
+    .side_link2 span{
+        font-size: 15px;
+    }
+    .side_link3 span{
+        font-size: 15px;
+    }
+    .backLead {
+        height: 250px;
+    }
+  }

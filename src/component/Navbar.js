@@ -13,14 +13,14 @@ export default function NavBar() {
   <Container fluid> 
   <Navbar.Brand href="#home">
       <Link to="/">
-      <img className="logo_home" src={Images.partyLogo} alt="Party Logo"/>
+      <img className="logo_home" src={Images.partyLogo} alt="Party Logo" />
       </Link>
-      <span className="orange_home2">NARSHINGH PARTY</span>
+      <span className="orange_home2">NRASHINGH PARTY</span>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features" ><h2 className="mt-2 orange_home">NARSINGHJAN PARTY</h2></Nav.Link>
+      <Nav.Link href="#features" ><h2 className="mt-2 ml-4 orange_home">NRASINGHJAN PARTY</h2></Nav.Link>
     </Nav>
     <Nav >
         <li className="ml-2 dropdown">

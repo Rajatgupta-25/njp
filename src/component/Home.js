@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Leaders from './Leader';
 import Navbar from './Navbar';
 import BackgroundSlider from 'react-background-slider';
@@ -12,6 +12,9 @@ import FooterSection from './Footer';
 import SocialStream from './Social';
 
 export default function Home(){
+    useEffect(() => {
+        document.title = "NrasinghJan Party"
+    }, []);
     return (
         <>
             <BackgroundSlider  images={[Images.image1, Images.image2, Images.image3, Images.image4]} duration={8} transition={2} />

@@ -22,70 +22,39 @@ export default function Members() {
                 </div>
                 <div className="container mt-5">
                     <div className="row mt-5">
-                        <div className="col-3 ml-4 mt-5">
-                            <img className="memberImage" src={Images.vijaynderSingh} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Chaudhary Vijender Singh Verma</h6>
-                            <p className="imageContent text-muted">Former Governor of <b>Punjab, Himachal Pradesh, Haryana and Chandigarh</b> </p>
+                    <div className="col-3 ml-4 mt-5">
+                            <img className="memberImage" src={Images.ashwiniKumarSharma} width="240px" height="220px"/>
+                            <h6 className="ml-2 mt-3">आश्विनी कुमार शर्मा</h6>
+                            <p className="imageContent text-muted">संस्थाप/ राष्ट्रीय अध्यक्ष,नृसिंह जन पार्टी </p>
                         </div>
                         <div className="col-1"/>
                         <div className="col-3 mt-5">
-                            <img className="memberImage" src={Images.dineshKumarGupta} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Dinesh Kumar Gupta</h6>
-                            <p className="imageContent text-muted">General Secratary of <b>Delhi</b></p>
+                            <img className="memberImage" src={Images.vishalKrishna} width="240px" height="220px"/>
+                            <h6 className="ml-2 mt-3">आचार्य विशाल कृष्ण शर्मा </h6>
+                            <p className="imageContent text-muted">राष्ट्रीय उपाध्यक्ष, नृसिंह जन पार्टी </p>
                         </div>
                         <div className="col-1"/>
                         <div className="col-3 mt-5">
-                            <img className="memberImage" src={Images.rajniPareshar} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mrs. Rajni Pareshar</h6>
-                            <p className="imageContent text-muted">Minister Of <b>Uttar Pradesh</b></p>
+                            <img className="memberImage" src={Images.ramPandey} width="240px" height="220px"/>
+                            <h6 className="ml-2 mt-3">डॉ. श्री राम पांडेय </h6>
+                            <p className="imageContent text-muted"> राष्ट्रीय उपाध्यक्ष, नृसिंह जन पार्टी</p>
                         </div>
                     </div>
                     <div className="row mt-3">
-                        <div className="col-3 ml-4 mt-5">
-                            <img className="memberImage" src={Images.vinodUpadhyay} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Vinod Upadhyay</h6>
-                            <p className="imageContent text-muted">Vice President of <b>Uttar Pradesh</b> </p>
+                    <div className="col-3 ml-4 mt-5">
+                            <img className="memberImage" src={Images.varunShaurya} width="240px" height="220px"/>
+                            <h6 className="ml-2 mt-3">वरुण शौर्य</h6>
+                            <p className="imageContent text-muted">राष्ट्रीय महामंत्री संगठन </p>
                         </div>
                         <div className="col-1"/>
                         <div className="col-3 mt-5">
-                            <img className="memberImage" src={Images.abhishekBhatt} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Abhishek Kumar Bhatt</h6>
-                            <p className="imageContent text-muted">Co-Organization Secratary of <b>Uttarakhand</b></p>
-                        </div>
-                        <div className="col-1"/>
-                        <div className="col-3 mt-5">
-                            <img className="memberImage" src={Images.vishalKrishna} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Bhagwatacharya Vishal Krishna Sharma</h6>
-                            <p className="imageContent text-muted">Vice President of <b>Uttar Pradesh</b> </p>
-                        </div>
-                    </div>
-                    <div className="row mt-3">
-                        <div className="col-3 ml-4 mt-5">
-                            <img className="memberImage" src={Images.ashwiniKumarSharma} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Ashwini Kumar Sharma</h6>
-                            <p className="imageContent text-muted">Vice President of <b>Uttar Pradesh</b> </p>
-                        </div>
-                        <div className="col-1"/>
-                        <div className="col-3 mt-5">
-                            <img className="memberImage" src={Images.deepakSharma} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Deepak Sharma</h6>
-                            <p className="imageContent text-muted">Co-Organization Secratary of <b>Uttarakhand</b></p>
-                        </div>
-                        <div className="col-1"/>
-                        <div className="col-3 mt-5">
-                            <img className="memberImage" src={Images.hireshSingh} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Hiresh Singh</h6>
-                            <p className="imageContent text-muted">Vice President of <b>Uttar Pradesh</b> </p>
-                        </div>
-                    </div>
-                    <div className="row mt-3">
-                        <div className="col-3 ml-4 mt-5">
-                            <img className="memberImage" src={Images.varunShaurya} width="220px" height="200px"/>
-                            <h6 className="ml-2 mt-3">Mr. Varun Shaurya</h6>
-                            <p className="imageContent text-muted">General Secratary Organization </p>
+                            <img className="memberImage" src={Images.abhishekBhatt} width="240px" height="220px"/>
+                            <h6 className="ml-2 mt-3">अभिषेक भट्ट </h6>
+                            <p className="imageContent text-muted">राष्ट्रीय सह महामंत्री संगठन</p>
                         </div>
                         
                     </div>
+                    
                 </div>
                 <FooterSection/>
             </div>

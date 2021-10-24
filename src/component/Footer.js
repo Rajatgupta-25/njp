@@ -4,11 +4,15 @@ import '../css/footer.css';
 import {Modal, Button} from 'react-bootstrap';
 
 export default function FooterSection() {
-
     const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const myIdDownload = () => {
+    var action_src = "https://njpbharat.org/njpbharat/public/generate-idcard/" + document.getElementsByName("aadhar_no_download")[0].value;
+    document.location.href = action_src;
+  }
 
     return (
         <>
@@ -143,14 +147,16 @@ export default function FooterSection() {
           <div className="container">
               <div className="row mt-4">
                     <div className="col-10 ml-4">
-                        <form>
-                        <input className="form-control control" name="aadhar_no" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required maxlength="14"/>
+                        <form id="your_form">
+                        <input className="form-control control" name="aadhar_no_download" type="text" pattern="[2-9]{1}[0-9]{3}\s{1}[0-9]{4}\s{1}[0-9]{4}" placeholder="Aadhar Card Number" required maxLength="14"/>
                         </form>
                     </div>
               </div>
               <div className="row mt-3">
                     <div className="col-11 text-center">
-                        <Button className="download">Download</Button>
+                        <Button className="download" onClick={() => {
+                            myIdDownload();
+                        }}>Download</Button>
                     </div>
                 </div>
           </div>

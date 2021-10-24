@@ -2,32 +2,33 @@ import React from 'react';
 import '../css/map.css';
 import '../plugins/map';
 import ReactTooltip from 'react-tooltip';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Map() {
     return (
         <>
-            <div className="container-fluid map-back mt-5" >
-                <div className="row text-left " >
-                    <div className="col-6 mt-1 backContent">
-                        <div className="container content">
-                            <div className="row">
-                                <div className="col-12">
+            <Container fluid className="map-back mt-5" >
+                <Row className="text-left " >
+                    <Col xs={6} className="mt-1 backContent">
+                        <Container className="content">
+                            <Row>
+                                <Col>
                                     <p className="upName">UTTAR<br/> PRADESH</p>
-                                </div>
-                            </div>
-                            <div className="row text-left">
-                                <div className="col-4 ml-2">
-                                    <p className="districtName">District</p>
-                                    <p className="numberDistrict">75</p>
-                                </div>
-                                <div className="'col-4">
-                                    <p className="districtName">Total Seats</p>
-                                    <p className="numberDistrict">403</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6  backMap mt-1">
+                                </Col>
+                            </Row>
+                            <Row className="text-left">
+                                <Col xs={4} className="ml-2">
+                                    <p className="districtName1">District</p>
+                                    <p className="numberDistrict1">75</p>
+                                </Col>
+                                <Col xs={4}>
+                                    <p className="districtName2">Total Seats</p>
+                                    <p className="numberDistrict2">403</p>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Col>
+                    <Col xs={6} className="backMap mt-1">
                         {/* <img className="ml-5" src={Images.map} width="650px" height="620px" alt="map" /> */}
 
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full" width="740" height="566" style={{backgroundColor:'#e0f2f1'}}>
@@ -265,9 +266,9 @@ export default function Map() {
 </svg>
 <ReactTooltip id="Agra" place="top" effect="solid">Agra</ReactTooltip>
 <ReactTooltip id="Mathura" place="top" effect="solid">Mathura</ReactTooltip>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
             
         </>
     );
