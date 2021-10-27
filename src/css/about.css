@@ -35,3 +35,13 @@
     padding-top: 40px;
     padding-left: 550px;
 }
+
+@media only screen and (max-width: 600px) {
+    .about_heading{
+        padding-top: 45px;
+        font-size: 22px;
+    }
+    .temp{
+        display: none;
+    }
+}
